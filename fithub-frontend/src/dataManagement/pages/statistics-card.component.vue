@@ -34,7 +34,7 @@ export default {
 </script>
 <template>
   <div class="statistics">
-    <h1 class="tittle-settings">Estadística de datos</h1>
+    <h1 class="tittle-statistics">Estadística de datos</h1>
     <pv-divider class="divider"></pv-divider>
     <div class="statistics-container">
       <img class="img-settings" src="https://github.com/aksoonie/fithub-db/assets/134560396/7c74d96b-7ea1-4c3f-9d00-c55efc7fecc1" alt="img-settings">
@@ -84,7 +84,10 @@ export default {
   flex: 0 0 auto;
   margin-right: 4em;
 }
-
+.tittle-statistics{
+  margin-left:2em;
+  color:#c5d951;
+}
 
 @media screen and (max-width: 768px) {
   .statistics-container {

@@ -19,7 +19,8 @@ import FloatLabel from 'primevue/floatlabel';
 import InputNumber from 'primevue/inputnumber';
 import ConfirmPopup from "primevue/confirmpopup";
 import Divider from 'primevue/divider';
-
+import DataTable from 'primevue/datatable';
+import Column from 'primevue/column';
 
 
 createApp(App)
@@ -32,6 +33,8 @@ createApp(App)
     .component('pv-confirm-pop-up',ConfirmPopup)
     .component('pv-input-number', InputNumber)
     .component('pv-menubar',Menubar)
+    .component('pv-data-table',DataTable)
+    .component('pv-column',Column)
     .component('pv-divider',Divider)
     .component('pv-dropdown',Dropdown)
     .mount('#app')

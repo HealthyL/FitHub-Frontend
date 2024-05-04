@@ -110,7 +110,10 @@ export default {
 .botoncito{
   background-color: #c5d951;
 }
-
+.titulo-settings{
+  margin-left:3em;
+  color:#c5d951;
+}
 
 @media screen and (max-width: 768px) {
   .settings {
