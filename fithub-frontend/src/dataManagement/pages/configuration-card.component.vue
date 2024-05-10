@@ -42,27 +42,27 @@ export default {
 };
 </script>
 <template>
-  <h1 class="titulo-settings">Configuracion de datos</h1>
+  <h1 class="titulo-settings">{{ $t('settings.data-settings') }}</h1>
   <pv-divider class="divider"></pv-divider>
   <div class="settings">
     <img class="img-settings" src="https://github.com/aksoonie/fithub-db/assets/134560396/7c74d96b-7ea1-4c3f-9d00-c55efc7fecc1" alt="img-settings">
     <pv-card class="data-container">
-      <template #title>Mis datos</template>
+      <template #title>{{ $t('settings.my-data') }}</template>
       <template #content class="objective-content">
-        <p class="objective-text">Objetivo </p>
+        <p class="objective-text">{{ $t('settings.objective') }}</p>
         <pv-dropdown class="dropdown-objective" v-model="objective" :options="objectiveOptions" optionLabel="name" placeholder="Selecciona un objetivo" /><br>
         <div class="datos-user-number flex-auto">
-          <label for="weight-label" class="block mb-2"> Peso </label>
+          <label for="weight-label" class="block mb-2"> {{ $t('settings.weight') }} </label>
           <pv-input-number class="input-number" v-model="weight" inputId="weight-label" mode="decimal" showButtons :min="35.30" :max="200" decimalSeparator="." />
         </div>
         <div class="datos-user-number flex-auto">
-          <label for="height-label" class="block mb-2"> Altura </label>
+          <label for="height-label" class="block mb-2"> {{ $t('settings.height') }} </label>
           <pv-input-number class="input-number" v-model="height" inputId="height-label" mode="decimal" showButtons :min="130" :max="200"/>
         </div>
       </template>
       <template #footer>
         <div class="button-update">
-          <pv-button  class="botoncito" label="Actualizar" />
+          <pv-button  class="botoncito">{{$t('settings.update')}}</pv-button>
         </div>
       </template>
     </pv-card>
@@ -80,8 +80,7 @@ export default {
   justify-content: center;
 }
 .divider{
-  margin:auto;
-  margin-bottom:3em;
+  margin: auto auto 3em;
   width:90%;
 }
 .settings {
@@ -114,7 +113,6 @@ export default {
   margin-left:3em;
   color:#c5d951;
 }
-
 @media screen and (max-width: 768px) {
   .settings {
     flex-direction: column;

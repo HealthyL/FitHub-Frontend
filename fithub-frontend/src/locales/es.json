@@ -1,0 +1,41 @@
+{
+  "page-not-found": {
+    "title": "Error 404",
+    "sub-title": "ruta invalida",
+    "button": "Regresar a mi cuenta"
+  },
+  "toolbar": {
+    "myaccount": "Mi cuenta",
+    "rutine": "Rutina",
+    "nutrition": "Nutrición",
+    "settings": "Configuración",
+    "statistics": "Estadísticas"
+  },
+  "my-account": {
+    "title": "Mi cuenta"
+  },
+  "nutrition": {
+    "title": "Alimentación"
+  },
+  "rutine": {
+    "title": "Rutina"
+  },
+  "statistics": {
+    "title": "Estadística de datos",
+    "subtitle": "Estadísticas",
+    "proteins": "Proteínas",
+    "calories":"Calorías",
+    "fats":"Grasas",
+    "carbohydrates":"Carbohidratos",
+    "satured-fats":"Grasas Saturadas",
+    "disabled": "No hay estadísticas disponibles"
+  },
+  "settings": {
+    "data-settings": "Configuración de datos",
+    "my-data": "Mis datos",
+    "objective":"Objetivos",
+    "weight": "Peso",
+    "height": "Altura",
+    "update": "Actualizar"
+  }
+}

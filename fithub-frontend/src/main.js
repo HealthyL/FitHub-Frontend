@@ -21,10 +21,13 @@ import ConfirmPopup from "primevue/confirmpopup";
 import Divider from 'primevue/divider';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
+import SelectButton from "primevue/selectbutton";
+import i18n from "@/i18n.js";
 
 
 createApp(App)
     .use(PrimeVue, { ripple: true })
+    .use(i18n)
     .use(router)
     .component('pv-toolbar', Toolbar)
     .component('pv-button', Button)
@@ -35,6 +38,7 @@ createApp(App)
     .component('pv-menubar',Menubar)
     .component('pv-data-table',DataTable)
     .component('pv-column',Column)
+    .component('pv-select-button', SelectButton)
     .component('pv-divider',Divider)
     .component('pv-dropdown',Dropdown)
     .mount('#app')
