@@ -14,7 +14,7 @@ const router = createRouter({
         { path: '/nutrition', component: nutritionCardListComponent, meta: { title: 'Nutrition Card List' }, },
         { path: '/products', component: productsCardListComponent, meta: { title: 'Products Card List' }, },
         { path: '/settings', component: configurationCardComponent, meta: { title: 'Configuration' }, },
-        { path: '/',  redirect: '/settings' },
+        { path: '/',  redirect: '/my-account' },
         { path: '/:pathMatch(.*)*', component: PageNotFoundComponent},
 
     ]

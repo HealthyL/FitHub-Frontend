@@ -113,12 +113,14 @@ export default {
 
 <style scoped>
 .data-container{
-  width:40%;
+   width: 30%;
   max-width: 600px;
-  background-color: rgba(191, 185, 185, 0.38);
+  background-color: rgba(236, 233, 233, 0.11);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   border-radius: 1.5rem;
-  padding:2em;
+  padding:1.2em;
   display: flex;
+  margin:1.5em;
   justify-content: center;
 }
 
@@ -130,6 +132,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-items: stretch;
 }
 
 .statistics-card-title {
