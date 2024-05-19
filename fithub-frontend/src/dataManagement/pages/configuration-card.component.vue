@@ -62,7 +62,9 @@ export default {
   <pv-divider class="divider"></pv-divider>
   <div class="settings">
     <pv-card class="data-container">
-      <template #title>{{ $t('settings.my-data') }}</template>
+      <template #title>
+        <h3>{{ $t('settings.my-data') }}</h3>
+      </template>
       <template #content class="objective-content">
         <p class="objective-text">{{ $t('settings.objective') }}</p>
         <pv-dropdown class="dropdown-objective" v-model="objective" :options="objectiveOptions" optionLabel="name" :placeholder="$t('settings.select-objective')"  /><br>
@@ -82,26 +84,16 @@ export default {
       </template>
     </pv-card>
     <pv-card class="data-container">
+      <template #title>
+        <h3>{{ $t('statistics.subtitle') }}</h3>
+      </template>
       <template #content>
-        <h1 class="statistics-card-title">{{ $t('statistics.subtitle') }}</h1>
-        <template v-if="statistics">
-          <ul class="statistics-list">
-            <li>
-              <label class="title-statistics">{{ $t('statistics.proteins') }}</label> <label class="text-statistics">{{statistics.proteins}}</label>
-            </li>
-            <li>
-              <label class="title-statistics">{{ $t('statistics.calories') }}</label> <label class="text-statistics">{{statistics.calories}}</label>
-            </li>
-            <li>
-              <label class="title-statistics">{{ $t('statistics.fats') }}</label> <label class="text-statistics">{{statistics.fats}}</label>
-            </li>
-            <li>
-              <label class="title-statistics">{{ $t('statistics.carbohydrates') }}</label> <label class="text-statistics">{{statistics.carbohydrates}}</label>
-            </li>
-            <li>
-              <label class="title-statistics">{{ $t('statistics.satured-fats') }}</label> <label class="text-statistics">{{statistics.saturated_fats}}</label>
-            </li>
-          </ul>
+        <template v-if="statistics" class="statistics-list">
+          <p class="title-statistics">{{ $t('statistics.proteins') }}</p> <p class="text-statistics">{{statistics.proteins}}</p>
+          <p class="title-statistics">{{ $t('statistics.calories') }}</p> <p class="text-statistics">{{statistics.calories}}</p>
+          <p class="title-statistics">{{ $t('statistics.fats') }}</p> <p class="text-statistics">{{statistics.fats}}</p> <br>
+          <p class="title-statistics">{{ $t('statistics.carbohydrates') }}</p> <p class="text-statistics">{{statistics.carbohydrates}}</p>
+          <p class="title-statistics">{{ $t('statistics.satured-fats') }}</p> <p class="text-statistics">{{statistics.saturated_fats}}</p>
         </template>
         <template v-else>
           {{ $t('statistics.disabled') }}
@@ -112,15 +104,18 @@ export default {
 </template>
 
 <style scoped>
+h3{
+  color: #95a53a;
+}
 .data-container{
    width: 30%;
   max-width: 600px;
   background-color: rgba(236, 233, 233, 0.11);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   border-radius: 1.5rem;
-  padding:1.2em;
+  padding:1em;
   display: flex;
-  margin:1.5em;
+  margin:1em;
   justify-content: center;
 }
 
@@ -132,26 +127,32 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* para que los elementos hijos tengan la misma altura */
   align-items: stretch;
-}
-
-.statistics-card-title {
-  color: #c5d951;
 }
 .statistics-list{
   list-style-type: none;
-  font-size:18px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  line-height: 2;
 }
 .title-statistics {
   text-align: right;
   display: inline-block;
-  color: #c5d951;
+  color:  #95a53a;
+  font-weight: bold;
   width: 150px;
+  font-size:20px;
 }
 .text-statistics {
   text-align: left;
   display: inline-block;
   margin-left: 10px;
+  font-size:20px;
 }
 .dropdown-objective {
   background: white;
