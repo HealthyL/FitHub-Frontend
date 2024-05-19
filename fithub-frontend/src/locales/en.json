@@ -8,6 +8,7 @@
     "myaccount": "My account",
     "rutine": "Rutine",
     "nutrition": "Nutrition",
+    "products": "Products",
     "settings": "Settings",
     "statistics": "Statistics"
   },
@@ -36,6 +37,15 @@
     "objective":"Objective",
     "weight": "Weight",
     "height": "Hight",
-    "update": "Update"
+    "update": "Update",
+    "select-objective": "Select your objective"
+  },
+  "product": {
+    "title": "Products",
+    "price": "Price",
+    "description": "Description",
+    "category-select": "Select a category",
+    "disabled": "No available products",
+    "no-filter": "No filter"
   }
 }

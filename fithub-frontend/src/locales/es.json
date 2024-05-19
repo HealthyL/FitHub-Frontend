@@ -8,6 +8,7 @@
     "myaccount": "Mi cuenta",
     "rutine": "Rutina",
     "nutrition": "Nutrición",
+    "products": "Productos",
     "settings": "Configuración",
     "statistics": "Estadísticas"
   },
@@ -36,6 +37,15 @@
     "objective":"Objetivos",
     "weight": "Peso",
     "height": "Altura",
-    "update": "Actualizar"
+    "update": "Actualizar",
+    "select-objective": "Selecciona un objetivo"
+  },
+  "product": {
+    "title": "Productos",
+    "price": "Precio",
+    "description": "Descripción",
+    "category-select": "Selecciona una categoría",
+    "disabled": "No hay productos disponibles",
+    "no-filter": "Quitar filtro"
   }
 }

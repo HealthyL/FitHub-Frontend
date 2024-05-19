@@ -13,32 +13,36 @@ export default {
     <template #start>
       <div class="toolbar-content1 flex align-items-center">
         <img class="logo-toolbar" src="https://github.com/aksoonie/fithub-db/assets/134560396/5b192cd5-6101-4d98-b975-228b48c009c6" alt="logo">
-        <span class="title-toolbar">FitHub</span>
       </div>
       <div class="toolbar-content2">
         <a>
           <router-link :to="{ path: '/my-account' }" >
+            <i class="pi pi-user"></i>
             <span class="font-medium">{{ $t('toolbar.myaccount') }} </span>
           </router-link>
         </a>
         <a>
           <router-link :to="{ path: '/rutine' }" >
+            <i class="pi pi-calendar"></i>
             <span class="font-medium">{{ $t('toolbar.rutine') }} </span>
           </router-link>
         </a>
         <a>
           <router-link :to="{ path: '/nutrition' }" >
+            <i class="pi pi-apple"></i>
             <span class="font-medium">{{ $t('toolbar.nutrition') }} </span>
           </router-link>
         </a>
         <a>
-          <router-link :to="{ path: '/settings' }" >
-            <span class="font-medium">{{ $t('toolbar.settings') }} </span>
+          <router-link :to="{ path: '/products' }" >
+            <i class="pi pi-list"></i>
+            <span class="font-medium">{{ $t('toolbar.products') }} </span>
           </router-link>
         </a>
         <a>
-          <router-link :to="{ path: '/statistics' }" >
-            <span class="font-medium">{{ $t('toolbar.statistics') }} </span>
+          <router-link :to="{ path: '/settings' }" >
+            <i class="pi pi-cog"></i>
+            <span class="font-medium">{{ $t('toolbar.settings') }} </span>
           </router-link>
         </a>
         <div class="language-switcher-wrapper">
@@ -57,17 +61,22 @@ export default {
   span{
     font-size:large;
   }
+  .pi{
+    color: #7E8940;
+    margin:0.3em;
+  }
   .toolbar-container{
     height:5em;
     display:inline-block;
     width:100%;
     background-color: #c5d951;
+
   }
   a{
     text-decoration: none;
     margin-left:1.5em;
     border-radius:1.5em;
-    color:white;
+    color: #7E8940;
   }
   .logo-toolbar{
     width:3em;
