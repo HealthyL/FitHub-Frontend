@@ -23,6 +23,7 @@ import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import SelectButton from "primevue/selectbutton";
 import i18n from "@/i18n.js";
+import Sidebar from "primevue/sidebar";
 
 
 createApp(App)
@@ -38,6 +39,7 @@ createApp(App)
     .component('pv-menubar',Menubar)
     .component('pv-data-table',DataTable)
     .component('pv-column',Column)
+    .component('pv-sidebar',Sidebar)
     .component('pv-select-button', SelectButton)
     .component('pv-divider',Divider)
     .component('pv-dropdown',Dropdown)
