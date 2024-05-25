@@ -1,0 +1,134 @@
+{
+  "objectives": [
+    {
+      "id": 1,
+      "name": "Pérdida de peso"
+    },
+    {
+      "id": 2,
+      "name": "Aumento de masa muscular"
+    },
+    {
+      "id": 3,
+      "name": "Mejora de la resistencia"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Ana",
+      "age": 25,
+      "weight": 60.80,
+      "height": 165.00,
+      "email": "ana@example.com",
+      "objective": {
+        "id": 1,
+        "name": "Pérdida de peso"
+      },
+      "statistics":{
+        "proteins": 120,
+        "calories": 2000,
+        "fats": 60,
+        "carbohydrates": 225,
+        "saturated_fats": 25
+      }
+    }
+  ],
+  "statistics": [
+    {
+      "proteins": 150,
+      "calories": 2500,
+      "fats": 80,
+      "carbohydrates": 325,
+      "saturated_fats": 20
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Protein Powder",
+      "description": "Protein powder supplement to enhance performance and muscle recovery.",
+      "price": "$35.00",
+      "photoUrl": "https://macro1nutrition.com/cdn/shop/products/ChocolateProductPhotoTransparent.png?v=1652199838",
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "name": "Energy Bars",
+      "description": "Energy bars with high protein and fiber content.",
+      "price": "$3.00",
+      "photoUrl": "https://www.proathlix.com/blog/wp-content/uploads/2023/04/Image1-1024x1024.jpg",
+      "categoryId": 1
+    },
+    {
+      "id": 3,
+      "name": "BCAA Amino Acids",
+      "description": "Essential amino acids supplement for muscle recovery and growth.",
+      "price": "$23.00",
+      "photoUrl": "https://m.media-amazon.com/images/I/71XMhg+OVeL.jpg",
+      "categoryId": 1
+    },
+    {
+      "id": 4,
+      "name": "Pilates Ball 75cm + Free Pump",
+      "description": "75cm Pilates ball with included pump, ideal for stability and toning exercises.",
+      "price": "$10.00",
+      "photoUrl": "https://github.com/HealthyL/images/assets/134560396/3cfe1fd0-9260-4cd9-988c-b64c21d3d04d",
+      "categoryId": 2
+    },
+    {
+      "id": 5,
+      "name": "Jump Rope",
+      "description": "Adjustable jump rope, ideal for cardio exercises and high-intensity training.",
+      "price": "$6.00",
+      "photoUrl": "https://www.gaiam.com/cdn/shop/products/05-64484_GAIAM-WEIGHTED-JUMP-ROPE_A.jpg?v=1635877894",
+      "categoryId": 2
+    },
+    {
+      "id": 6,
+      "name": "Stationary Bike",
+      "description": "Stationary bike with adjustable resistance for cardiovascular workouts at home.",
+      "price": "$160.00",
+      "photoUrl": "https://m.media-amazon.com/images/I/61H3bX3fx9L._AC_SL1500_.jpg",
+      "categoryId": 2
+    },
+    {
+      "id": 7,
+      "name": "Adjustable Dumbbells",
+      "description": "Adjustable dumbbells from 2 to 20kg, ideal for strength and resistance exercises.",
+      "price": "$90.00",
+      "photoUrl": "https://www.powertrain.com.au/media/catalog/product/cache/664/90/r/e/red.jpg",
+      "categoryId": 3
+    },
+    {
+      "id": 8,
+      "name": "Resistance Band",
+      "description": "Elastic resistance band for strength, flexibility, and rehabilitation exercises.",
+      "price": "$7.00",
+      "photoUrl": "https://cdn.shopify.com/s/files/1/0461/7948/3807/products/OK1925-3_1200x1200.jpg?v=1629434339",
+      "categoryId": 3
+    },
+    {
+      "id": 9,
+      "name": "Lifting Straps + Ankle Straps",
+      "description": "This exciting pack combines two essential elements: our Lifting Straps and our Ankle Straps.",
+      "price": "$20.00",
+      "photoUrl": "https://legafitstore.com/wp-content/uploads/2022/09/LEGAFIT-7-scaled.jpg",
+      "categoryId": 3
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Nutrition"
+    },
+    {
+      "id": 2,
+      "name": "Cardio"
+    },
+    {
+      "id": 3,
+      "name": "Functional"
+    }
+  ]
+}
