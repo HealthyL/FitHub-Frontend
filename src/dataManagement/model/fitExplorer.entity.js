@@ -1,11 +1,12 @@
 export class fitExplorerEntity {
-    constructor(ID_User= '', name= '', age= '', weight= '', height= '', email='', objective=null) {
-        this.ID_User = ID_User;
+    constructor(id= '', name= '', age= '', weight= 0, height= 0, email='', statistics=null, objectiveId=0 ) {
+        this.id = id;
         this.name = name;
         this.age = age;
         this.weight = weight;
         this.height = height;
         this.email = email;
-        this.objective=objective;
+        this.statistics=statistics;
+        this.objectiveId=objectiveId;
     }
 }

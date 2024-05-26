@@ -28,7 +28,7 @@
     "calories":"Calorías",
     "fats":"Grasas",
     "carbohydrates":"Carbohidratos",
-    "satured-fats":"Grasas Saturadas",
+    "saturedfats":"Grasas Saturadas",
     "disabled": "No hay estadísticas disponibles"
   },
   "settings": {
@@ -37,6 +37,9 @@
     "objective":"Objetivos",
     "weight": "Peso",
     "height": "Altura",
+    "lose-weight": "Perdida de peso",
+    "gain-weight": "Ganancia de peso",
+    "maintain-weight": "Mantener peso",
     "update": "Actualizar",
     "select-objective": "Selecciona un objetivo"
   },

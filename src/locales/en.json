@@ -28,7 +28,7 @@
     "calories":"Calories",
     "fats":"Fats",
     "carbohydrates":"Carbohydrates",
-    "satured-fats":"Satured Fats",
+    "saturedfats":"Satured Fats",
     "disabled": "Disabled Statistics"
   },
   "settings": {
@@ -36,7 +36,10 @@
     "my-data": "My data",
     "objective":"Objective",
     "weight": "Weight",
-    "height": "Hight",
+    "height": "Height",
+    "lose-weight": "Lose weight",
+    "gain-weight": "Gain weight",
+    "maintain-weight": "Maintain weight",
     "update": "Update",
     "select-objective": "Select your objective"
   },

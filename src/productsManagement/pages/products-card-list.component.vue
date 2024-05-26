@@ -25,7 +25,6 @@ export default {
     async fetchCategoryOptions() {
       try {
         const response = await this.productsService.getCategory();
-        console.log('Fetched Categories:', response.data);  // Debugging
         this.categoryOptions = response.data.map(categoryData => new CategoryEntity(categoryData.id, categoryData.name));
       } catch (error) {
         console.error('Error fetching category data:', error);  // Error handling
@@ -35,11 +34,8 @@ export default {
     async fetchProducts() {
       try {
         const response = await this.productsService.getProducts();
-        console.log('Fetched Products:', response.data);  // Debugging
         this.products = response.data.map(productData => new ProductEntity(productData.id, productData.name, productData.description, productData.price,productData.photoUrl, productData.categoryId));
-        console.log('Products after mapping:', this.products);  // Debugging
       } catch (error) {
-        console.error('Error fetching product data:', error);  // Error handling
       }
     },
     resetFilter() {
@@ -48,7 +44,6 @@ export default {
   },
   computed: {
     filteredProducts() {
-      console.log('Selected Category ID:', this.categoryId);
       if (this.categoryId !== null) {
         const filtered = this.products.filter(product => product.categoryId === Number(this.categoryId));
         console.log('Filtered Products:', filtered);

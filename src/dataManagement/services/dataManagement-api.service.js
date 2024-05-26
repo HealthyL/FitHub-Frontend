@@ -7,4 +7,7 @@ export class DataManagementApiService {
     getObjectives(){
         return http.get('/objectives');
     }
+    updateUserData(userId, userData) {
+        return http.put(`/users/${userId}`, userData);
+    }
 }
