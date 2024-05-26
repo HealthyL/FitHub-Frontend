@@ -26,7 +26,7 @@
         "calories": 3000,
         "fats": 100,
         "carbohydrates": 400,
-        "saturatedfats": 30
+        "saturated": 30
       },
       "objectiveId": "Pérdida de peso"
     },

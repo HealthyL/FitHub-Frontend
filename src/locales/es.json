@@ -28,7 +28,7 @@
     "calories":"Calorías",
     "fats":"Grasas",
     "carbohydrates":"Carbohidratos",
-    "saturedfats":"Grasas Saturadas",
+    "saturated":"Grasas Saturadas",
     "disabled": "No hay estadísticas disponibles"
   },
   "settings": {
