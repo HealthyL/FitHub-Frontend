@@ -30,34 +30,34 @@ export default {
           <language-switcher></language-switcher>
         </div>
         <div class="sidebar-route-path-link overflow-y-auto">
-          <a>
+          <a @click="closeCallback">
             <router-link :to="{ path: '/my-account' }" >
               <i class="pi pi-user"></i>
-              <span class="font-medium" @click="closeCallback">{{ $t('toolbar.myaccount') }} </span>
+              <span class="font-medium" >{{ $t('toolbar.myaccount') }} </span>
             </router-link>
           </a>
-          <a>
+          <a @click="closeCallback">
             <router-link :to="{ path: '/rutine' }" >
               <i class="pi pi-calendar"></i>
-              <span class="font-medium" @click="closeCallback">{{ $t('toolbar.rutine') }} </span>
+              <span class="font-medium" >{{ $t('toolbar.rutine') }} </span>
             </router-link>
           </a>
-          <a>
+          <a @click="closeCallback">
             <router-link :to="{ path: '/nutrition' }" >
               <i class="pi pi-apple"></i>
-              <span class="font-medium" @click="closeCallback">{{ $t('toolbar.nutrition') }} </span>
+              <span class="font-medium">{{ $t('toolbar.nutrition') }} </span>
             </router-link>
           </a>
-          <a>
+          <a @click="closeCallback">
             <router-link :to="{ path: '/products' }" >
               <i class="pi pi-list"></i>
-              <span class="font-medium" @click="closeCallback">{{ $t('toolbar.products') }} </span>
+              <span class="font-medium">{{ $t('toolbar.products') }} </span>
             </router-link>
           </a>
-          <a>
+          <a @click="closeCallback">
             <router-link :to="{ path: '/settings' }" >
               <i class="pi pi-cog"></i>
-              <span class="font-medium" @click="closeCallback">{{ $t('toolbar.settings') }} </span>
+              <span class="font-medium" >{{ $t('toolbar.settings') }} </span>
             </router-link>
           </a>
         </div>
