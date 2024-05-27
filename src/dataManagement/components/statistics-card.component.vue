@@ -1,13 +1,9 @@
 <script>
-import {fitExplorerEntity} from "@/dataManagement/model/fitExplorer.entity.js";
 import {DataManagementApiService} from "@/dataManagement/services/dataManagement-api.service.js";
-import UserDataCard from "@/dataManagement/components/user-data-card.component.vue";
-import StatisticsCard from "@/dataManagement/components/statistics-card.component.vue";
+import {fitExplorerEntity} from "@/dataManagement/model/fitExplorer.entity.js";
 
 export default {
-  name: "settings-card",
-  components: {StatisticsCard, UserDataCard},
-  title: "Configuration",
+  name: "statistics-card",
   data() {
     return {
       users: [],
@@ -55,33 +51,66 @@ export default {
 };
 </script>
 <template>
-  <h1 class="titulo-settings">{{ $t('settings.data-settings') }}</h1>
-  <pv-divider class="divider"></pv-divider>
-  <div class="settings">
-    <user-data-card></user-data-card>
-    <statistics-card></statistics-card>
-  </div>
+  <pv-card class="data-container">
+    <template #title>
+      <h3>{{ $t('statistics.subtitle') }}</h3>
+    </template>
+    <template #content>
+      <template v-if="statistics && Object.keys(statistics).length > 0" class="statistics-list">
+        <div class="statistics-content" v-for="(value, name) in statistics" :key="name">
+          <span class="title-statistics">{{ $t(`statistics.${name}`) }}</span>
+          <span class="text-statistics">{{ value }}</span>
+        </div>
+      </template>
+    </template>
+  </pv-card>
 </template>
 
 <style scoped>
-.divider {
-  margin: auto auto 3em;
-  width: 90%;
+h3 {
+  color: #95a53a;
 }
 
-.settings {
+.data-container {
+  width: 40%;
+  max-width: 600px;
+  background-color: rgba(236, 233, 233, 0.11);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-radius: 1.5rem;
+  padding: 1em;
   display: flex;
+  margin: 1em;
   justify-content: center;
-  align-items: center;
 }
-.titulo-settings {
-  margin-left: 3em;
-  color: #c5d951;
+
+.statistics-content {
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+}
+
+.title-statistics {
+  text-align: right;
+  display: inline-block;
+  color: #95a53a;
+  font-weight: bold;
+  width: 150px;
+  font-size: 22px;
+  line-height: 3;
+}
+
+.text-statistics {
+  line-height: 3;
+  text-align: left;
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 768px) {
-  .settings {
-    flex-direction: column;
+  .data-container {
+    width: 80%;
+    padding: 1em;
   }
 }
 </style>
