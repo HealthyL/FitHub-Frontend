@@ -1,4 +1,3 @@
-import './assets/main.css'
 import { createApp } from 'vue'
 // PrimeVue
 import PrimeVue from 'primevue/config';
@@ -27,7 +26,7 @@ import Sidebar from "primevue/sidebar";
 
 
 createApp(App)
-    .use(PrimeVue, { ripple: true })
+    .use(PrimeVue, { ripple : true })
     .use(i18n)
     .use(router)
     .component('pv-toolbar', Toolbar)
