@@ -1,0 +1,54 @@
+{
+  "page-not-found": {
+    "title": "Error 404",
+    "sub-title": "ruta invalida",
+    "button": "Regresar a mi cuenta"
+  },
+  "toolbar": {
+    "myaccount": "Mi cuenta",
+    "rutine": "Rutina",
+    "nutrition": "Nutrición",
+    "products": "Productos",
+    "settings": "Configuración",
+    "statistics": "Estadísticas"
+  },
+  "my-account": {
+    "title": "Mi cuenta"
+  },
+  "nutrition": {
+    "title": "Alimentación"
+  },
+  "rutine": {
+    "title": "Rutina"
+  },
+  "statistics": {
+    "title": "Estadística de datos",
+    "subtitle": "Estadísticas",
+    "proteins": "Proteínas",
+    "calories":"Calorías",
+    "fats":"Grasas",
+    "carbohydrates":"Carbohidratos",
+    "saturated":"Grasas Saturadas",
+    "disabled": "No hay estadísticas disponibles"
+  },
+  "settings": {
+    "data-settings": "Configuración de datos",
+    "my-data": "Mis datos",
+    "objective":"Objetivos",
+    "weight": "Peso",
+    "height": "Altura",
+    "lose-weight": "Perdida de peso",
+    "gain-weight": "Ganancia de peso",
+    "maintain-weight": "Mantener peso",
+    "update": "Actualizar",
+    "select-objective": "Selecciona un objetivo"
+  },
+  "product": {
+    "title": "Productos",
+    "price": "Precio",
+    "description": "Descripción",
+    "category-select": "Selecciona una categoría",
+    "disabled": "No hay productos disponibles",
+    "no-filter": "Quitar filtro"
+  }
+}
