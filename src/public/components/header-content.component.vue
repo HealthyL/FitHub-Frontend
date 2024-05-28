@@ -59,7 +59,7 @@
 
 <script setup>
 import { ref } from 'vue';
-import NutritionList from "../../nutrition/components/nutrition-list.component.vue";
+import NutritionList from "../../nutritionManagement/components/nutritionManagement-list.component.vue";
 
 const activeSection = ref('nutrition');
 

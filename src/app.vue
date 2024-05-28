@@ -43,7 +43,7 @@ export default {
             </router-link>
           </a>
           <a @click="closeCallback">
-            <router-link :to="{ path: '/nutrition' }" >
+            <router-link :to="{ path: '/nutritionManagement' }" >
               <i class="pi pi-apple"></i>
               <span class="font-medium">{{ $t('toolbar.nutrition') }} </span>
             </router-link>
@@ -84,7 +84,7 @@ export default {
           </router-link>
         </a>
         <a>
-          <router-link :to="{ path: '/nutrition' }" >
+          <router-link :to="{ path: '/nutritionManagement' }" >
             <i class="pi pi-apple"></i>
             <span class="font-medium">{{ $t('toolbar.nutrition') }} </span>
           </router-link>

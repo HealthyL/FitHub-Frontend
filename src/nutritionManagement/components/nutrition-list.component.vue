@@ -1,11 +1,11 @@
 <script>
-import {NutritionApiService} from "/src/nutrition/services/nutrition-api.service.js";
 import LunchComponent from "./lunch.component.vue";
 import LunchSection from "./lunch.component.vue";
 import DinnerComponent from "./dinner.component.vue";
 import DinnerSection from "./dinner.component.vue";
 import BreakfastComponent from "./breakfast.component.vue";
 import BreakfastSection from "./breakfast.component.vue";
+import {NutritionApiService} from "@/nutritionManagement/services/nutrition-api.service.js";
 
 export default {
   name: "nutrition-list",

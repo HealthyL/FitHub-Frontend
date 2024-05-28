@@ -1,5 +1,6 @@
 <script>
-import {Nutrition} from "/src/nutrition/model/nutrition.entity.js";
+
+import {Nutrition} from "@/nutritionManagement/model/nutrition.entity.js";
 
 export default {
   name: "breakfast-section",
