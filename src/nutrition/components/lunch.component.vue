@@ -27,11 +27,10 @@ export default {
 </template>
 
 <style scoped>
+
 .custom-card {
   margin-top: 3rem;
-  margin-left: 0rem;
-  margin-bottom: 3rem;
-  margin-right: 60px;
+  margin-right: 2%;
   flex-wrap: wrap;
 }
 

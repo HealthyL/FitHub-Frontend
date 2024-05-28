@@ -86,6 +86,7 @@ export default {
       <div class="almuerzos-box-cards">
         <lunch-section v-for="nutrition in almuerzos" :key="nutrition.id" :nutrition="nutrition"></lunch-section>
       </div>
+    <pv-button label="AGREGAR" class="button-editar" />
   </div>
   <!-- Mostrar la sección cenas -->
   <div v-if="activeSection === 'cenas'" class="cenas-content">
@@ -97,27 +98,34 @@ export default {
 
 <style scoped>
 .cenas-content,.desayunos-content,.almuerzos-content{
-  width: 145%;
+  margin-left:2%;
   font-family: "Nunito", sans-serif;
-  margin-bottom: 2%;
 }
 .cenas-box-cards,.desayunos-box-cards,.almuerzos-box-cards{
   display: flex;
   flex-wrap: wrap;
 }
-
+.button-editar{
+  margin:3%;
+  width:20%;
+  background-color: #a1ac62;
+  color: #ffffff;
+  font-size: 16px; /* Tamaño de fuente más grande */
+  height: auto; /* Altura automática */
+}
 
 .selected-button {
+  margin-left:2%;
   background-color: #c5d951;
   color: white;
   border-radius: 20px;
   border-color: #afc148;
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
-  margin-top: 1px;
 }
 
 .unselected-button {
+  margin-left:2%;
   background-color: white;
   color: #b0b0b0;
   border: 2px solid #b0b0b0;
@@ -129,10 +137,9 @@ export default {
 }
 
 h1 {
-  margin-left: 35px;
-  margin-botton: 1px;
-  margin-top: 1px;
+  color: #1a1a1a;
+  text-align: center;
   font-family: 'Nunito', sans-serif;
-  text-align: left;
+  margin-top:2%;
 }
 </style>

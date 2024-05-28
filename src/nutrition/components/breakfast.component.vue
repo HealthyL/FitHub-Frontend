@@ -9,7 +9,7 @@ export default {
 }
 </script>
 <template>
-  <pv-card class="custom-card" style="width: 50rem; height: 13rem; overflow: hidden">
+  <pv-card class="custom-card" style="width: 50rem; height: 17rem; overflow: hidden">
     <template #content>
       <div class="card-content">
         <div class="image-container">
@@ -18,6 +18,10 @@ export default {
         <div class="card-details">
           <h2 class="card-title">{{nutrition.title}}</h2>
           <p> Ingredientes: {{ nutrition.ingredientes }}</p>
+          <div class="card-button">
+            <pv-button label="EDITAR" class="button-editar" />
+            <pv-button label="ELIMINAR" class="button-editar" />
+          </div>
         </div>
       </div>
     </template>
@@ -26,20 +30,31 @@ export default {
 
 
 <style scoped>
+
+.button-editar{
+  margin-top:1%;
+  margin-right:5%;
+  background-color: #ffffff;
+  border-color:black;
+  color:black;
+  font-size: 16px; /* Tamaño de fuente más grande */
+  width: auto; /* Ancho automático */
+  height: auto; /* Altura automática */
+}
 .custom-card {
   margin-top: 3rem;
-  margin-left: 0rem;
-  margin-bottom: 3rem;
-  margin-right: 60px;
-  flex-wrap: wrap;
+  margin-right: 2%;
 }
 
 .card-content {
+  align-items:center;
   font-family: "Nunito", sans-serif;
   display: flex;
-  align-items: center;
 }
-
+img{
+  width:290px;
+  height:236px;
+}
 .image-container {
   margin-right: 1rem;
 }
@@ -48,5 +63,4 @@ export default {
   margin-bottom: 0.5rem;
   font-size: 25px;
 }
-
 </style>
