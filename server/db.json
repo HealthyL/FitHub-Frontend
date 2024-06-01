@@ -1,0 +1,452 @@
+{
+  "objectives": [
+    {
+      "id": "1",
+      "name": "Pérdida de peso"
+    },
+    {
+      "id": "2",
+      "name": "Aumento de masa muscular"
+    },
+    {
+      "id": "3",
+      "name": "Mejora de la resistencia"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Juelita Venegas",
+      "age": "25",
+      "weight": 100,
+      "height": 170,
+      "email": "americanagirl@outlook.com",
+      "statistics": {
+        "proteins": 200,
+        "calories": 3000,
+        "fats": 100,
+        "carbohydrates": 400,
+        "saturated": 30
+      },
+      "objectiveId": "Mejora de la resistencia"
+    },
+    {
+      "id": "2",
+      "name": "Jorge Pérez",
+      "age": "30",
+      "weight": "80",
+      "height": "180",
+      "email": "jorgeperez@uwu.com",
+      "statistics": {
+        "proteins": 200,
+        "calories": 3000,
+        "fats": 100,
+        "carbohydrates": 400,
+        "saturatedfats": 30
+      },
+      "objectiveId": "2"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Protein Powder",
+      "description": "Protein powder supplement to enhance performance and muscle recovery.",
+      "price": "$35.00",
+      "photoUrl": "https://macro1nutrition.com/cdn/shop/products/ChocolateProductPhotoTransparent.png?v=1652199838",
+      "categoryId": 1
+    },
+    {
+      "id": "2",
+      "name": "Energy Bars",
+      "description": "Energy bars with high protein and fiber content.",
+      "price": "$3.00",
+      "photoUrl": "https://www.proathlix.com/blog/wp-content/uploads/2023/04/Image1-1024x1024.jpg",
+      "categoryId": 1
+    },
+    {
+      "id": "3",
+      "name": "BCAA Amino Acids",
+      "description": "Essential amino acids supplement for muscle recovery and growth.",
+      "price": "$23.00",
+      "photoUrl": "https://m.media-amazon.com/images/I/71XMhg+OVeL.jpg",
+      "categoryId": 1
+    },
+    {
+      "id": "4",
+      "name": "Pilates Ball 75cm + Free Pump",
+      "description": "75cm Pilates ball with included pump, ideal for stability and toning exercises.",
+      "price": "$10.00",
+      "photoUrl": "https://github.com/HealthyL/images/assets/134560396/3cfe1fd0-9260-4cd9-988c-b64c21d3d04d",
+      "categoryId": 2
+    },
+    {
+      "id": "5",
+      "name": "Jump Rope",
+      "description": "Adjustable jump rope, ideal for cardio exercises and high-intensity training.",
+      "price": "$6.00",
+      "photoUrl": "https://www.gaiam.com/cdn/shop/products/05-64484_GAIAM-WEIGHTED-JUMP-ROPE_A.jpg?v=1635877894",
+      "categoryId": 2
+    },
+    {
+      "id": "6",
+      "name": "Stationary Bike",
+      "description": "Stationary bike with adjustable resistance for cardiovascular workouts at home.",
+      "price": "$160.00",
+      "photoUrl": "https://m.media-amazon.com/images/I/61H3bX3fx9L._AC_SL1500_.jpg",
+      "categoryId": 2
+    },
+    {
+      "id": "7",
+      "name": "Adjustable Dumbbells",
+      "description": "Adjustable dumbbells from 2 to 20kg, ideal for strength and resistance exercises.",
+      "price": "$90.00",
+      "photoUrl": "https://www.powertrain.com.au/media/catalog/product/cache/664/90/r/e/red.jpg",
+      "categoryId": 3
+    },
+    {
+      "id": "8",
+      "name": "Resistance Band",
+      "description": "Elastic resistance band for strength, flexibility, and rehabilitation exercises.",
+      "price": "$7.00",
+      "photoUrl": "https://cdn.shopify.com/s/files/1/0461/7948/3807/products/OK1925-3_1200x1200.jpg?v=1629434339",
+      "categoryId": 3
+    },
+    {
+      "id": "9",
+      "name": "Lifting Straps + Ankle Straps",
+      "description": "This exciting pack combines two essential elements: our Lifting Straps and our Ankle Straps.",
+      "price": "$20.00",
+      "photoUrl": "https://legafitstore.com/wp-content/uploads/2022/09/LEGAFIT-7-scaled.jpg",
+      "categoryId": 3
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "name": "Nutrition"
+    },
+    {
+      "id": "2",
+      "name": "Cardio"
+    },
+    {
+      "id": "3",
+      "name": "Functional"
+    }
+  ],
+  "desayunos": [
+    {
+      "id": 1,
+      "title": "Bol de cereales con leche y fruta",
+      "ingredientes": "Copos de maíz o avena, leche de vaca  o leche de almendras y puedes elegir entre plátanos, fresas o arándanos",
+      "image": "https://github.com/HealthyL/images/assets/131493394/2a33f6f0-f709-4133-961c-ab805ccbd2ef"
+    },
+    {
+      "id": 2,
+      "title": "Tortitas de avena",
+      "ingredientes": "2 huevos medianos, 60 gr. de copos de avena, 5 gr. de levadura química y leche",
+      "image": "https://github.com/HealthyL/images/assets/131493394/903d200c-6e34-4cd1-be82-5323c35d370a"
+    },
+    {
+      "id": 3,
+      "title": "Yogur con pera, plátano y frutos secos",
+      "ingredientes": "Pera, Frutos Secos, Miel y Yogur",
+      "image": "https://github.com/HealthyL/images/assets/131493394/4643ef01-d594-43ab-be9c-5c08ded18a5b"
+    },
+    {
+      "id": 4,
+      "title": "Pudding de chía y fruta",
+      "ingredientes": "1/2 cucharadas semillas de chía seca, 1 taza leche de coco y 1 cucharita jarabe de agave",
+      "image": "https://github.com/HealthyL/images/assets/131493394/004f1737-2aaf-4e9b-9fce-896b5d4f3971"
+    },
+    {
+      "id": 5,
+      "title": "Tosta dulce",
+      "ingredientes": "2 Huevos, 2 Tazas de Cereal, 1/4 Taza de Leche de Avena y 1 Cucharada de Mantequilla fundida",
+      "image": "https://github.com/HealthyL/images/assets/131493394/47f9a179-0b14-4b54-9355-25de711831b1"
+    },
+    {
+      "id": 6,
+      "title": "Tostas saladas",
+      "ingredientes": "Mantequilla, Harina de trigo cucharadas, Huevos cocidos, Palta y Chia",
+      "image": "https://github.com/HealthyL/images/assets/131493394/123f5865-6a05-4e2b-82db-edda18a63748"
+    }
+  ],
+  "almuerzos": [
+    {
+      "id": 1,
+      "title": "Ensalada de atún con arroz integral",
+      "descripcion": "Si tienes poco tiempo para cocinar, esta receta de ensalada de atún.",
+      "image": "https://github.com/HealthyL/images/assets/131493394/ee27e02d-b697-4d20-b80f-f3337ed252df",
+      "link": "https://ekilu.com/es/receta/ensalada-oriental-de-atun-y-arroz-integral"
+    },
+    {
+      "id": 2,
+      "title": "Salteado de garbanzos con pollo y verduras\n",
+      "descripcion": "Los salteados es la mejor técnica de cocina para comer cosas ricas de una forma saludable.",
+      "image": "https://github.com/HealthyL/images/assets/131493394/a5b4564b-3099-4215-95c9-b1469930eaa0",
+      "link": "https://www.directoalpaladar.com/recetas-de-legumbres-y-verduras/salteado-de-garbanzos-con-pollo-y-verduras-receta"
+    },
+    {
+      "id": 3,
+      "title": "Canutos con pechuga de pavo",
+      "descripcion": "Este plato es delicioso y equilibrado. Tiene proteínas, carbohidratos y verduras, todo lo que necesitamos para recargar energía.",
+      "image": "https://github.com/HealthyL/images/assets/131493394/f98bb6d4-27f4-4bc2-8f1b-a4077299128c",
+      "link": "https://tvolima.pe/receta-saludable-de-canutos-con-pechuga-de-pavo/"
+    },
+    {
+      "id": 4,
+      "title": "Ensalada de pollo al sillao y ajonjolí",
+      "descripcion": "Si estás cuidando la línea, esta ensalada estilo oriental es una buena opción de almuerzo.",
+      "image": "https://github.com/HealthyL/images/assets/131493394/7d7e8789-0d01-4769-8ec2-f4b431c1efe9",
+      "link": "https://cookidoo.mx/recipes/recipe/es-MX/r553384"
+    },
+    {
+      "id": 5,
+      "title": "Filete de pollo a la plancha",
+      "descripcion": "Nada mejor que comer unos filetes de pollo a la plancha cuando queremos empezar la dieta.",
+      "image": "https://github.com/HealthyL/images/assets/131493394/72e267c9-938e-461d-9e58-02e71471738f",
+      "link": "https://www.recetasnestle.com.pe/recetas/pollo-al-sillao"
+    },
+    {
+      "id": 6,
+      "title": "Hamburguesa de pavo y verduras",
+      "descripcion": "La receta ha sido 100% improvisada y el resultado es espectacular",
+      "image": "https://github.com/HealthyL/images/assets/131493394/39d470b3-76a3-4628-90f8-f8d9e65a08e5",
+      "link": "https://www.recetasgratis.net/receta-de-filete-de-pechuga-a-la-plancha-59314.html"
+    }
+  ],
+  "cenas": [
+    {
+      "id": 1,
+      "title": "Calabacines al parmesano",
+      "ingredientes": "Copos de maíz o avena, Leche de vaca  o leche de almendras y puedes elegir entre plátanos, fresas o arándanos",
+      "image": "https://github.com/HealthyL/images/assets/131493394/6d5dbdf3-cf24-428b-9698-db292f95a00c"
+    },
+    {
+      "id": 2,
+      "title": "Alcachofas con apio y manzanas",
+      "ingredientes": "100 gramos de lechugas variadas, 2 pencas de apio, 2 alcachofas y 1 manzana",
+      "image": "https://github.com/HealthyL/images/assets/131493394/0ae21aa8-06b0-4468-a853-0c8dad712650"
+    },
+    {
+      "id": 3,
+      "title": "Pollo a la plancha con lima",
+      "ingredientes": "4 filetes de pechuga de pollo, 3 limas y 2 dientes de ajo",
+      "image": "https://github.com/HealthyL/images/assets/131493394/07776dae-90be-4553-adb3-c327b5580ff3"
+    },
+    {
+      "id": 4,
+      "title": "Calabacines al parmesano",
+      "ingredientes": "Copos de maíz o avena, Leche de vaca  o leche de almendras y puedes elegir entre plátanos, fresas o arándanos",
+      "image": "https://github.com/HealthyL/images/assets/131493394/44efc5cc-b772-4e09-8fef-70b1c28925e0"
+    },
+    {
+      "id": 5,
+      "title": "Minipizzas de verdura",
+      "ingredientes": "200 g de cebolla, 150 g de puerro, 180 g de pimiento rojo y 200 g de mozzarella rallada ",
+      "image": "https://github.com/HealthyL/images/assets/131493394/be7b1174-9ff6-4c04-a3af-e785bea4dfd0"
+    },
+    {
+      "id": 6,
+      "title": "Semillas rojas rojas",
+      "ingredientes": "400 gramos de tomates cereza, 250 gramos de frutas rojas y 1 diente de ajo",
+      "image": "https://github.com/HealthyL/images/assets/131493394/27f4a60e-88b9-4298-a761-7051d46d298e"
+    }
+  ],
+  "rutinas": [
+    {
+      "id": 1,
+      "dia": "Day 1",
+      "title": "Femorals and Glutes",
+      "image": "https://previews.123rf.com/images/lioputra/lioputra2106/lioputra210600001/169820415-mujer-haciendo-ejercicio-de-peso-muerto-con-pesas-rusas-ilustraci%C3%B3n-de-vector-plano-aislado-sobre.jpg",
+      "photo1": "",
+      "photo2": "",
+      "photo3": "",
+      "photo4": "",
+      "photo5": "",
+      "photo6": "",
+      "activity1": "Squats",
+      "activity2": "Lunges",
+      "activity3": "Deadlifts",
+      "activity4": "Leg Press",
+      "activity5": "Hip Thrusts",
+      "activity6": "Calf Raises",
+      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
+      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
+      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
+      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
+      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
+      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
+      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
+      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
+      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
+      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
+      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
+      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+    },
+    {
+      "id": 2,
+      "dia": "Day 2",
+      "title": "Back and Biceps",
+      "image": "https://static.vecteezy.com/system/resources/previews/016/138/007/original/man-doing-lat-pulldown-pull-ups-exercise-flat-illustration-isolated-on-white-background-vector.jpg",
+      "photo1": "",
+      "photo2": "",
+      "photo3": "",
+      "photo4": "",
+      "photo5": "",
+      "photo6": "",
+      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
+      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
+      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
+      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
+      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
+      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
+      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
+      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
+      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
+      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
+      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
+      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+    },
+    {
+      "id": 3,
+      "dia": "Day 3",
+      "title": "Quadriceps and Calves",
+      "image": "https://static.vecteezy.com/system/resources/previews/008/631/414/original/woman-doing-exercise-using-adduction-inner-thigh-machine-adductor-abductor-flat-illustration-isolated-on-white-background-vector.jpg",
+      "photo1": "",
+      "photo2": "",
+      "photo3": "",
+      "photo4": "",
+      "photo5": "",
+      "photo6": "",
+      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
+      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
+      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
+      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
+      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
+      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
+      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
+      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
+      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
+      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
+      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
+      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+    },
+    {
+      "id": 4,
+      "dia": "Day 4",
+      "title": "Legs and Abdomen",
+      "image": "https://static.vecteezy.com/system/resources/previews/008/384/841/original/man-doing-leg-extension-on-machine-exercise-flat-illustration-isolated-on-white-background-free-vector.jpg",
+      "photo1": "",
+      "photo2": "",
+      "photo3": "",
+      "photo4": "",
+      "photo5": "",
+      "photo6": "",
+      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
+      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
+      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
+      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
+      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
+      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
+      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
+      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
+      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
+      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
+      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
+      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+    },
+    {
+      "id": 5,
+      "dia": "Day 5",
+      "title": "Men and Trapeze",
+      "image": "https://static.vecteezy.com/system/resources/previews/008/384/838/non_2x/man-doing-triceps-presdown-exercise-flat-illustration-isolated-on-white-background-free-vector.jpg",
+      "photo1": "",
+      "photo2": "",
+      "photo3": "",
+      "photo4": "",
+      "photo5": "",
+      "photo6": "",
+      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
+      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
+      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
+      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
+      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
+      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
+      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
+      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
+      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
+      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
+      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
+      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+    },
+    {
+      "id": 6,
+      "dia": "Day 6",
+      "title": "Cardio and Core",
+      "image": "https://i.pinimg.com/736x/d2/03/8c/d2038c8478f88ec91dc5ae17647e6b59.jpg",
+      "photo1": "",
+      "photo2": "",
+      "photo3": "",
+      "photo4": "",
+      "photo5": "",
+      "photo6": "",
+      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
+      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
+      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
+      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
+      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
+      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
+      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
+      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
+      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
+      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
+      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
+      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+    },
+    {
+      "id": 7,
+      "dia": "day 7",
+      "title": "Rest",
+      "image": "https://previews.123rf.com/images/leonhartrizal/leonhartrizal1412/leonhartrizal141200007/34916614-hombre-tomar-un-descanso-despu%C3%A9s-del-ejercicio.jpg",
+      "photo1": "",
+      "photo2": "",
+      "photo3": "",
+      "photo4": "",
+      "photo5": "",
+      "photo6": "",
+      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
+      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
+      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
+      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
+      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
+      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
+      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
+      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
+      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
+      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
+      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
+      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+    }
+  ],
+  "plans": [
+    {
+      "id": 1,
+      "name": "Nutri Plan",
+      "description": "Un enfoque integral para la nutrición que no solo se centra en la alimentación, sino también en la importancia del equilibrio emocional y el bienestar mental para una vida plena y saludable."
+    },
+    {
+      "id": 2,
+      "name": "Fit Plan",
+      "description": "Se enfoca exclusivamente en proporcionar planes de entrenamiento, rutinas, consejos de ejercicio y seguimiento de progreso para ayudar a las personas a alcanzar sus metas fitness."
+    },
+    {
+      "id": 3,
+      "name": "Nutri Fit Plan",
+      "description": "Combina lo mejor de ambos mundos, planes de entrenamiento personalizados, y asesoramiento experto sobre nutrición, recetas saludables y seguimiento de progreso integral para lograr resultados óptimos."
+    }
+
+]
+}
