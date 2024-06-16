@@ -5,6 +5,9 @@ import accountManagementComponent from "@/accountManagement/pages/account-manage
 import rutineCardListComponent from "@/rutineManagement/pages/rutine-card-list.component.vue";
 import productsCardListComponent from "@/productsManagement/pages/products-card-list.component.vue";
 import nutritionListComponent from "@/nutritionManagement/components/nutrition-list.component.vue";
+import subscriptionManagementComponent from "@/subscription/pages/subscription-management.component.vue";
+import paymentGatewayComponent from "@/subscription/pages/payment-gateway.component.vue";
+
 
 const router = createRouter({
     history: createWebHistory(),
@@ -14,6 +17,8 @@ const router = createRouter({
         { path: '/nutritionManagement', component: nutritionListComponent, meta: { title: 'Nutrition Card List' }, },
         { path: '/products', component: productsCardListComponent, meta: { title: 'Products Card List' }, },
         { path: '/settings', component: configurationCardComponent, meta: { title: 'Configuration' }, },
+        { path: '/subscription-management', component: subscriptionManagementComponent, meta: { title: 'Subscription Management' } },
+        { path: '/payment-gateway', component: paymentGatewayComponent, meta: { title: 'Payment Gateway' } },
         { path: '/',  redirect: '/my-account' },
         { path: '/:pathMatch(.*)*', component: PageNotFoundComponent},
 

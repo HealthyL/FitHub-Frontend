@@ -3,6 +3,7 @@ import { createApp } from 'vue'
 import PrimeVue from 'primevue/config';
 import 'primeflex/primeflex.css';
  import 'primeicons/primeicons.css';
+import 'primevue/resources/primevue.min.css';
 
 // PrimeVue Material Design Theme
 import 'primevue/resources/themes/mdc-light-indigo/theme.css';
@@ -21,6 +22,13 @@ import Divider from 'primevue/divider';
 import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import SelectButton from "primevue/selectbutton";
+import InputText from "primevue/inputtext";
+import Textarea from "primevue/textarea";
+import Calendar from "primevue/calendar";
+
+
+import '@fortawesome/fontawesome-free/css/all.css'
+
 import i18n from "@/i18n.js";
 import Sidebar from "primevue/sidebar";
 
@@ -29,6 +37,8 @@ createApp(App)
     .use(PrimeVue, { ripple : true })
     .use(i18n)
     .use(router)
+    .component('pv-input-text', InputText)
+    .component('pv-textarea', Textarea)
     .component('pv-toolbar', Toolbar)
     .component('pv-button', Button)
     .component('pv-card', Card)
@@ -42,4 +52,5 @@ createApp(App)
     .component('pv-select-button', SelectButton)
     .component('pv-divider',Divider)
     .component('pv-dropdown',Dropdown)
+    .component('pv-calendar',Calendar)
     .mount('#app')
