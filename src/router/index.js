@@ -1,5 +1,4 @@
 import {createRouter, createWebHistory} from "vue-router";
-import configurationCardComponent from "@/dataManagement/pages/configuration-card.component.vue";
 import PageNotFoundComponent from "@/public/pages/page-not-found.component.vue";
 import accountManagementComponent from "@/accountManagement/pages/account-management.component.vue";
 import rutineCardListComponent from "@/rutineManagement/pages/rutine-card-list.component.vue";
@@ -16,7 +15,6 @@ const router = createRouter({
         { path: '/rutine', component: rutineCardListComponent, meta: { title: 'Rutine Card List' }, },
         { path: '/nutritionManagement', component: nutritionListComponent, meta: { title: 'Nutrition Card List' }, },
         { path: '/products', component: productsCardListComponent, meta: { title: 'Products Card List' }, },
-        { path: '/settings', component: configurationCardComponent, meta: { title: 'Configuration' }, },
         { path: '/subscription-management', component: subscriptionManagementComponent, meta: { title: 'Subscription Management' } },
         { path: '/payment-gateway', component: paymentGatewayComponent, meta: { title: 'Payment Gateway' } },
         { path: '/',  redirect: '/my-account' },

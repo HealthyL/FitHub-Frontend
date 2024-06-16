@@ -54,12 +54,6 @@ export default {
               <span class="font-medium">{{ $t('toolbar.products') }} </span>
             </router-link>
           </a>
-          <a @click="closeCallback">
-            <router-link :to="{ path: '/settings' }" >
-              <i class="pi pi-cog"></i>
-              <span class="font-medium" >{{ $t('toolbar.settings') }} </span>
-            </router-link>
-          </a>
         </div>
       </div>
     </template>
@@ -93,12 +87,6 @@ export default {
           <router-link :to="{ path: '/products' }" >
             <i class="pi pi-list"></i>
             <span class="font-medium">{{ $t('toolbar.products') }} </span>
-          </router-link>
-        </a>
-        <a>
-          <router-link :to="{ path: '/settings' }" >
-            <i class="pi pi-cog"></i>
-            <span class="font-medium">{{ $t('toolbar.settings') }} </span>
           </router-link>
         </a>
         <div class="language-switcher-wrapper">
