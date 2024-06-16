@@ -67,5 +67,9 @@ export default {
 .rutine-image {
   width: 100%;
   height: auto;
+
+.divider{
+  margin: auto auto 3em;
+  width:90%;
 }
 </style>

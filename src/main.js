@@ -29,8 +29,6 @@ import Calendar from "primevue/calendar";
 
 import '@fortawesome/fontawesome-free/css/all.css'
 
-
-
 import i18n from "@/i18n.js";
 import Sidebar from "primevue/sidebar";
 

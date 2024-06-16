@@ -18,7 +18,7 @@
       "id": "1",
       "name": "Juelita Venegas",
       "age": "25",
-      "weight": 100,
+      "weight": 69,
       "height": 170,
       "email": "americanagirl@outlook.com",
       "statistics": {
@@ -28,7 +28,7 @@
         "carbohydrates": 400,
         "saturated": 30
       },
-      "objectiveId": "Mejora de la resistencia"
+      "objectiveId": "Pérdida de peso"
     },
     {
       "id": "2",
@@ -448,5 +448,5 @@
       "description": "Combina lo mejor de ambos mundos, planes de entrenamiento personalizados, y asesoramiento experto sobre nutrición, recetas saludables y seguimiento de progreso integral para lograr resultados óptimos."
     }
 
-]
+  ]
 }
