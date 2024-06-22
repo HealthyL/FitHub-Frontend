@@ -13,38 +13,31 @@
       "name": "Mejora de la resistencia"
     }
   ],
-  "users": [
+  "gender": [
     {
       "id": "1",
-      "name": "Juelita Venegas",
-      "age": "25",
-      "weight": 69,
-      "height": 170,
-      "email": "americanagirl@outlook.com",
-      "statistics": {
-        "proteins": 200,
-        "calories": 3000,
-        "fats": 100,
-        "carbohydrates": 400,
-        "saturated": 30
-      },
-      "objectiveId": "Pérdida de peso"
+      "name": "Femenino"
     },
     {
       "id": "2",
-      "name": "Jorge Pérez",
-      "age": "30",
-      "weight": "80",
-      "height": "180",
-      "email": "jorgeperez@uwu.com",
-      "statistics": {
-        "proteins": 200,
-        "calories": 3000,
-        "fats": 100,
-        "carbohydrates": 400,
-        "saturatedfats": 30
+      "name": "Masculino"
+    }
+  ],
+  "users": [
+    {
+      "name": "Barbara Quezada",
+      "email": "americanagirl@outlook.com",
+      "birthdate": "2024-06-18",
+      "gender": {
+        "id": "1",
+        "name": "Femenino"
       },
-      "objectiveId": "2"
+      "objective": {
+        "id": "2",
+        "name": "Aumento de masa muscular"
+      },
+      "password": "12345",
+      "id": "1"
     }
   ],
   "products": [
@@ -447,6 +440,5 @@
       "name": "Nutri Fit Plan",
       "description": "Combina lo mejor de ambos mundos, planes de entrenamiento personalizados, y asesoramiento experto sobre nutrición, recetas saludables y seguimiento de progreso integral para lograr resultados óptimos."
     }
-
   ]
 }

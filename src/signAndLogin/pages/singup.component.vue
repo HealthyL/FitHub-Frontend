@@ -77,6 +77,7 @@ export default {
 
 <style scoped>
 .container {
+  margin-top: 3em;
   display: flex;
   justify-content: center;
   height: 100vh;

@@ -125,6 +125,7 @@ export default {
   .toolbar-container{
     height:5em;
     display:inline-block;
+    margin-bottom:1.5em;
     width:100%;
     background-color: #c5d951;
   }
