@@ -89,6 +89,16 @@ export default {
             <span class="font-medium">{{ $t('toolbar.products') }} </span>
           </router-link>
         </a>
+        <a>
+          <router-link :to="{ path: '/login' }" >
+            <span class="font-medium">{{ $t('toolbar.login') }} </span>
+          </router-link>
+        </a>
+        <a>
+          <router-link :to="{ path: '/signup' }" >
+            <span class="font-medium">{{ $t('toolbar.signup') }} </span>
+          </router-link>
+        </a>
         <div class="language-switcher-wrapper">
           <language-switcher></language-switcher>
         </div>
@@ -117,7 +127,6 @@ export default {
     display:inline-block;
     width:100%;
     background-color: #c5d951;
-
   }
   .toolbar-container a{
     text-decoration: none;

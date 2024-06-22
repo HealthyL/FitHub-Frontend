@@ -10,7 +10,30 @@
     "nutrition": "Nutrition",
     "products": "Products",
     "settings": "Settings",
-    "statistics": "Statistics"
+    "statistics": "Statistics",
+    "login": "Log in",
+    "signup": "Sign up"
+  },
+  "login": {
+    "title": "Log in",
+    "description": "Log in to your account",
+    "username": "Username",
+    "password": "Password",
+    "error": "Username or password",
+    "go-to-signup": "Don't have an account?"
+  },
+  "signup": {
+    "title": "Sign up",
+    "description": "Create a new account",
+    "username": "Username",
+    "email": "Email",
+    "birthdate": "Birthdate",
+    "gender": "Gender",
+    "goal": "Goal",
+    "password": "Password",
+    "confirm-password": "Confirm password",
+    "error": "Username already exists",
+    "go-to-login": "Already have an account?"
   },
   "my-account": {
     "title": "My account"

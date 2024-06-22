@@ -31,6 +31,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 import i18n from "@/i18n.js";
 import Sidebar from "primevue/sidebar";
+import Password from "primevue/password";
 
 
 createApp(App)
@@ -38,9 +39,11 @@ createApp(App)
     .use(i18n)
     .use(router)
     .component('pv-input-text', InputText)
+    .component('pv-float-label', FloatLabel)
     .component('pv-textarea', Textarea)
     .component('pv-toolbar', Toolbar)
     .component('pv-button', Button)
+    .component('pv-password', Password)
     .component('pv-card', Card)
     .component('pv-float-label', FloatLabel)
     .component('pv-confirm-pop-up',ConfirmPopup)

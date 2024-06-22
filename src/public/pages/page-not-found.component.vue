@@ -15,7 +15,7 @@ export default {
   <div class="content-page-not-found">
     <h2>{{$t('page-not-found.title')}}</h2>
     <p> {{ route }} {{$t('page-not-found.sub-title')}}</p>
-    <router-link class="button" to="/settings">{{$t('page-not-found.button')}}</router-link>
+    <router-link class="button" to="/my-account">{{$t('page-not-found.button')}}</router-link>
   </div>
 </template>
 

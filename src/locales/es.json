@@ -10,7 +10,30 @@
     "nutrition": "Nutrición",
     "products": "Productos",
     "settings": "Configuración",
-    "statistics": "Estadísticas"
+    "statistics": "Estadísticas",
+    "login": "Iniciar sesión",
+    "signup": "Registrarse"
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "description": "Ingresa tus datos",
+    "username": "Usuario",
+    "password": "Contraseña",
+    "error": "Usuario o contraseña incorrectos",
+    "go-to-signup": "Already have an account?"
+  },
+  "signup": {
+    "title": "Crear cuenta",
+    "description": "Completa tus datos",
+    "username": "Usuario",
+    "email": "Email",
+    "birthdate": "Fecha de nacimiento",
+    "gender": "Género",
+    "goal": "Meta",
+    "password": "Contraseña",
+    "confirm-password": "Confirma tu contraseña",
+    "error": "Ya existe un username igual",
+    "go-to-login": "Ya tienes una cuenta?"
   },
   "my-account": {
     "title": "Mi cuenta"
