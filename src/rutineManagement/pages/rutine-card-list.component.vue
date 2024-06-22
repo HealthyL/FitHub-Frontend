@@ -31,11 +31,8 @@ export default {
 </script>
 
 <template>
-  <h1 class="titulo-settings">
-    {{ $t('rutine.title') }}
-    <i class="fas fa-dumbbell"></i>
-    <pv-divider class="divider"></pv-divider>
-  </h1>
+  <h1 class="titulo-rutine">{{ $t('toolbar.rutine') }}</h1>
+  <pv-divider class="divider"></pv-divider>
   <div class="rutine-cards" style="width: 75%; margin: auto;">
     <div class="rutine-row" v-for="(rutineGroup, index) in groupedRutines" :key="'group-' + index">
       <div class="rutine-card" v-for="rutine in rutineGroup" :key="rutine.id" style="width: 25%;">
@@ -48,9 +45,13 @@ export default {
 </template>
 
 <style scoped>
-.titulo-settings{
+.titulo-rutine{
   margin-left:3em;
   color:#c5d951;
+}
+.divider {
+  margin: auto auto 3em;
+  width: 90%;
 }
 .rutine-row {
   display: flex;

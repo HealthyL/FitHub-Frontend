@@ -62,7 +62,8 @@ export default {
 }
 </script>
 <template>
-  <h1>Alimentacion</h1>
+  <h1 class="titulo-nutrition">{{ $t('toolbar.nutrition') }}</h1>
+  <pv-divider class="divider"></pv-divider>
   <div class="card flex justify-content-left flex-wrap gap-3">
     <!--utilizamos el evento @click-->
     <pv-button label="Desayunos" text raised
@@ -97,6 +98,14 @@ export default {
 </template>
 
 <style scoped>
+.titulo-nutrition {
+  margin-left: 3em;
+  color: #c5d951;
+}
+.divider {
+  margin: auto auto 3em;
+  width: 90%;
+}
 .cenas-content,.desayunos-content,.almuerzos-content{
   margin-left:2%;
   font-family: "Nunito", sans-serif;
