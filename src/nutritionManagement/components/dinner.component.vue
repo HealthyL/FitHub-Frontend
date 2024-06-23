@@ -5,6 +5,14 @@ export default {
   name: "dinner-section",
   props: {
     nutrition : Nutrition,
+  },
+  methods: {
+    editNutrition() {
+      this.$emit('edit-nutrition', this.nutrition);
+    },
+    deleteNutrition() {
+      this.$emit('delete-nutrition', this.nutrition.id);
+    }
   }
 }
 </script>
@@ -20,8 +28,8 @@ export default {
           <h2 class="card-title">{{nutrition.title}}</h2>
           <p> Ingredientes: {{ nutrition.ingredientes }}</p>
           <div class="card-button">
-            <pv-button label="EDITAR" class="button-editar" />
-            <pv-button label="ELIMINAR" class="button-editar" />
+            <pv-button label="EDITAR" class="button-editar" @click="editNutrition" />
+            <pv-button label="ELIMINAR" class="button-eliminar" @click="deleteNutrition" />
           </div>
         </div>
       </div>
@@ -31,15 +39,35 @@ export default {
 
 
 <style scoped>
-.button-editar{
-  margin-top:1%;
-  margin-right:5%;
-  background-color: #ffffff;
-  border-color:black;
-  color:black;
-  font-size: 16px; /* Tamaño de fuente más grande */
-  width: auto; /* Ancho automático */
-  height: auto; /* Altura automática */
+
+.button-editar {
+  margin-right: 5%;
+  background-color: #C5D951FF;
+  margin-top:1.5em;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button-editar:hover{
+  background-color: #8BB500D6;
+  transform: scale(1.1);
+}
+.button-eliminar {
+  background-color: firebrick;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+  margin-right:0.5em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button-eliminar:hover{
+  background-color: #7e1313;
+  transform: scale(1.1);
 }
 .custom-card {
   margin-top: 3rem;

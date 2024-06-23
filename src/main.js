@@ -32,6 +32,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import i18n from "@/i18n.js";
 import Sidebar from "primevue/sidebar";
 import Password from "primevue/password";
+import Dialog from "primevue/dialog";
 
 
 createApp(App)
@@ -56,4 +57,5 @@ createApp(App)
     .component('pv-divider',Divider)
     .component('pv-dropdown',Dropdown)
     .component('pv-calendar',Calendar)
+    .component('pv-dialog',Dialog)
     .mount('#app')
