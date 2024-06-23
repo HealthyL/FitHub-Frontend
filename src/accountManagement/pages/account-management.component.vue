@@ -103,29 +103,29 @@ export default {
     <div class="personal-data">
       <div class="personal-info">
         <div class="field">
-          <label for="name">Name </label>
+          <label for="name">{{ $t('my-account.name') }} </label>
           <pv-input-text class="p-inputtext" id="name" v-model="name" />
         </div>
         <div class="field">
-          <label for="email">Email </label>
+          <label for="email">{{ $t('my-account.email') }} </label>
           <pv-input-text class="p-inputtext" id="email" v-model="email" />
         </div>
         <div class="field">
-          <label for="birthdate">Birthdate </label>
+          <label for="birthdate">{{ $t('my-account.birthdate') }} </label>
           <pv-calendar class="p-calendar" id="birthdate" v-model="birthdate" dateFormat="yy-mm-dd"/>
         </div>
         <div class="field">
-          <label for="objective">Objective </label>
+          <label for="objective">{{ $t('my-account.objective') }} </label>
           <pv-dropdown class="p-dropdown" id="objective" v-model="objective" :options="objectiveOptions" optionLabel="name" :placeholder="objective" />
         </div>
         <div class="field">
-          <label for="password">Password </label>
+          <label for="password">{{ $t('my-account.password') }} </label>
           <pv-input-text class="p-inputtext" id="password" v-model="password"/>
         </div>
       </div>
       <div class="button-update">
-        <pv-button class="botoncito" @click="showConfirm = true" v-show="!showConfirm">{{$t('settings.update')}}</pv-button>
-        <ConfirmComponent class="confirmation-update-button" :show="showConfirm" message="¿Estás seguro?" @confirm="onConfirm" @cancel="onCancel" />
+        <pv-button class="botoncito" @click="showConfirm = true" v-show="!showConfirm">{{$t('confirmation.confirm')}}</pv-button>
+        <ConfirmComponent class="confirmation-update-button" :show="showConfirm" :message="$t('my-account.message')" @confirm="onConfirm" @cancel="onCancel" />
       </div>
     </div>
   </div>
@@ -197,7 +197,6 @@ export default {
 .button-update {
   display: flex;
   justify-content: flex-end;
-  margin-top: 2rem;
 }
 
 .botoncito {
@@ -214,10 +213,6 @@ export default {
 .botoncito:hover {
   background-color: #8BB500D6;
   transform: scale(1.1);
-}
-
-.confirmation-update-button {
-  margin-left: 1rem;
 }
 
 /* Media Queries for Responsiveness */

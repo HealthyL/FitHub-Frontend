@@ -36,35 +36,19 @@
     "go-to-login": "Already have an account?"
   },
   "my-account": {
-    "title": "My account"
+    "title": "My account",
+    "name": "Name",
+    "email": "Email",
+    "birthdate": "Birthdate",
+    "objective": "Objective",
+    "password": "Password",
+    "message": "Are you sure?"
   },
   "nutrition": {
     "title": "Nutrition"
   },
   "rutine": {
     "title": "Rutine"
-  },
-  "statistics": {
-    "title": "Data statistics",
-    "subtitle": "Statistics",
-    "proteins": "Proteins",
-    "calories":"Calories",
-    "fats":"Fats",
-    "carbohydrates":"Carbohydrates",
-    "saturated":"Satured Fats",
-    "disabled": "Disabled Statistics"
-  },
-  "settings": {
-    "data-settings": "Data settings",
-    "my-data": "My data",
-    "objective":"Objective",
-    "weight": "Weight",
-    "height": "Height",
-    "lose-weight": "Lose weight",
-    "gain-weight": "Gain weight",
-    "maintain-weight": "Maintain weight",
-    "update": "Update",
-    "select-objective": "Select your objective"
   },
   "product": {
     "title": "Products",
@@ -73,5 +57,9 @@
     "category-select": "Select a category",
     "disabled": "No available products",
     "no-filter": "No filter"
+  },
+  "confirmation": {
+    "confirm": "Update",
+    "cancel": "Cancel"
   }
 }
