@@ -29,7 +29,7 @@
     "email": "Email",
     "birthdate": "Birthdate",
     "gender": "Gender",
-    "goal": "Goal",
+    "objective": "Objective",
     "password": "Password",
     "confirm-password": "Confirm password",
     "error": "Username already exists",

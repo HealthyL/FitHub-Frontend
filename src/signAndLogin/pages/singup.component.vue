@@ -1,15 +1,49 @@
 <script>
-export default {
-  name: "signup-content",
-  setup(){
-    const gender = null;
-    const genders = [
-      { label: 'Male', value: 'M' },
-      { label: 'Female', value: 'F' }
-    ];
-  }
+import { AccountManagementApiService } from "@/accountManagement/services/accountManagement-api.service.js";
+import { ObjectiveEntity } from "@/shared/model/objective.entity.js";
+import { GenderEntity } from "@/shared/model/gender.entity.js";
 
-}
+export default {
+  name: "settings-card",
+  title: "Configuration",
+  data() {
+    return {
+      accountManagementApiService: null,
+      objectiveOptions: [],
+      genderOptions: [],
+      objective: null,
+      gender: null,
+      name: null,
+      email: null,
+      birthdate: null,
+      password: null,
+      confirmPassword: null
+    };
+  },
+  created() {
+    this.accountManagementApiService = new AccountManagementApiService();
+    this.fetchObjectiveOptions();
+    this.fetchGenderOptions();
+  },
+  methods: {
+    async fetchObjectiveOptions() {
+      try {
+        const response = await this.accountManagementApiService.getObjectives();
+        this.objectiveOptions = response.data.map(objective => new ObjectiveEntity(objective.id, objective.name));
+      } catch (error) {
+        console.error('Error al obtener los datos', error);
+      }
+    },
+    async fetchGenderOptions() {
+      try {
+        const response = await this.accountManagementApiService.getGenders();
+        this.genderOptions = response.data.map(gender => new GenderEntity(gender.id, gender.name));
+      } catch (error) {
+        console.error('Error al obtener los datos', error);
+      }
+    }
+  }
+};
 </script>
 
 <template>
@@ -19,54 +53,51 @@ export default {
       <p class="description">{{ $t('signup.description') }}</p>
       <div>
         <pv-float-label class="p-float-label">
-          <pv-input-text class="input" v-model="value" />
+          <pv-input-text class="input" v-model="name" />
           <label class="label-input" for="username">{{ $t('signup.username') }}</label>
         </pv-float-label>
       </div>
       <div>
         <pv-float-label class="p-float-label">
-          <pv-input-text class="input" v-model="value" placeholder="pepito@example.com" />
+          <pv-input-text class="input" v-model="email" placeholder="pepito@example.com" />
           <label class="label-input" for="email">{{ $t('signup.email') }}</label>
         </pv-float-label>
       </div>
       <div>
         <pv-float-label class="p-float-label">
-          <pv-calendar class="input" v-model="value" dateFormat="dd/mm/yy"/>
+          <pv-calendar class="input" v-model="birthdate" dateFormat="dd/mm/yy" />
           <label class="label-input" for="birthdate">{{ $t('signup.birthdate') }}</label>
         </pv-float-label>
       </div>
       <div>
         <pv-float-label class="p-float-label">
-          <pv-dropdown class="input" id="gender" v-model="gender" :options="genders" optionLabel="label" />
+          <pv-dropdown class="input" id="gender" v-model="gender" :options="genderOptions" optionLabel="name" />
           <label class="label-input" for="gender">{{ $t('signup.gender') }}</label>
         </pv-float-label>
       </div>
       <div>
         <pv-float-label class="p-float-label">
-          <pv-dropdown class="input" id="goal" v-model="goal" :options="goals" optionLabel="label" />
-          <label class="label-input" for="goal">{{ $t('signup.goal') }}</label>
+          <pv-dropdown class="input" id="objective" v-model="objective" :options="objectiveOptions" optionLabel="name" />
+          <label class="label-input" for="goal">{{ $t('signup.objective') }}</label>
         </pv-float-label>
       </div>
       <div>
         <pv-float-label class="p-float-label">
-          <pv-password class="input" v-model="value" inputId="password" :feedback="false" toggleMask/>
+          <pv-input-text class="input" type="password" v-model="password" inputId="password" />
           <label for="password">{{ $t('signup.password') }}</label>
-          <span id="passwordError" class="error-message" style="display: none; color: red;">La contraseña debe tener al menos 8 caracteres.</span>
         </pv-float-label>
       </div>
       <div>
         <pv-float-label class="p-float-label">
-          <pv-password class="input" v-model="value" inputId="password" :feedback="false" toggleMask style="width:20em;"/>
-          <label for="password">{{ $t('signup.confirm-password') }}</label>
-          <span id="passwordError" class="error-message" style="display: none; color: red;">La contraseña debe tener al menos 8 caracteres.</span>
+          <pv-input-text class="input" type="password" v-model="confirmPassword" inputId="confirm-password" />
+          <label for="confirm-password">{{ $t('signup.confirm-password') }}</label>
         </pv-float-label>
       </div>
       <br>
       <div class="registration-question">
-        <span class="go-to-registration">{{ $t('signup.confirm-password') }} </span>
         <a>
-          <router-link :to="{ path: '/login' }" >
-            <span class="route-to-registration"> {{ $t('signup.go-to-login') }} </span>
+          <router-link :to="{ path: '/login' }">
+            <span class="route-to-registration">{{ $t('signup.go-to-login') }}</span>
           </router-link>
         </a>
       </div>
@@ -85,13 +116,16 @@ export default {
 }
 .signup {
   text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
 }
 .signup .title {
   font-size: 32px;
   margin-bottom: 20px;
   color: #8BB500D6;
 }
-.route-to-registration{
+.route-to-registration {
   text-decoration: none;
   color: #95a53a;
 }
@@ -101,19 +135,18 @@ export default {
   color: #666;
   margin-bottom: 20px;
 }
-.p-float-label{
+.p-float-label {
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  width: 100%;
 }
-.input{
-  width: 20em !important;
+.input {
+  width: 100% !important;
   height: 3em;
   border-radius: 5px;
 }
-
+.label-input {
+  color: #666;
+}
 .error-message {
   position: absolute;
   top: 100%;
@@ -123,20 +156,20 @@ export default {
   font-size: 14px;
   margin-top: 4px;
 }
-.registration-question{
+.registration-question {
   align-items: center;
   justify-content: center;
 }
-.go-to-registration{
+.go-to-registration {
   color: black;
-  font-weight:700;
+  font-weight: 700;
 }
-pv-password{
-  width: 20em !important;
+pv-password {
+  width: 100% !important;
 }
 .btn-register {
   background-color: #C5D951FF;
-  margin-top:1.5em;
+  margin-top: 1.5em;
   color: #fff;
   font-size: 18px;
   border: none;
@@ -145,34 +178,23 @@ pv-password{
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .btn-register:hover {
   background-color: #8BB500D6;
   transform: scale(1.1);
 }
-
 @media screen and (max-width: 768px) {
   .signup {
-    padding: 30px;
+    padding: 20px;
   }
-
   .title {
     font-size: 28px;
   }
-
   .description {
     font-size: 18px;
   }
-
-  .signup input[type="email"],
-  .signup input[type="password"] {
-    font-size: 14px;
-  }
-
   .btn-register {
     font-size: 16px;
     padding: 10px 20px;
   }
 }
-
 </style>

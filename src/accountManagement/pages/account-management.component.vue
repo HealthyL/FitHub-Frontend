@@ -1,8 +1,8 @@
 <script>
 import ConfirmComponent from "@/accountManagement/components/confirm.component.vue";
 import {AccountManagementApiService} from "@/accountManagement/services/accountManagement-api.service.js";
-import {ObjectiveEntity} from "@/accountManagement/model/objective.entity.js";
-import {GenderEntity} from "@/accountManagement/model/gender.entity.js";
+import {ObjectiveEntity} from "@/shared/model/objective.entity.js";
+import {GenderEntity} from "@/shared/model/gender.entity.js";
 import {userEntity} from "@/accountManagement/model/user.entity.js";
 
 export default {

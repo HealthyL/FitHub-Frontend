@@ -11,6 +11,6 @@ export class AccountManagementApiService{
         return http.put(`/users/${id}`, data);
     }
     getGenders() {
-        return http.get('/genders');
+        return http.get('/gender');
     }
 }

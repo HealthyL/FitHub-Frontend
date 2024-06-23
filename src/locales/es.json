@@ -29,7 +29,7 @@
     "email": "Email",
     "birthdate": "Fecha de nacimiento",
     "gender": "Género",
-    "goal": "Meta",
+    "objective": "Objetivo",
     "password": "Contraseña",
     "confirm-password": "Confirma tu contraseña",
     "error": "Ya existe un username igual",
