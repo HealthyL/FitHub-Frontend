@@ -54,11 +54,17 @@ export default {
       if (this.rutineId !== null) {
         const filtered =
             this.exercises.filter(exercise =>
-            exercise.rutineId === this.rutineId);
+                exercise.rutineId === this.rutineId);
         console.log('Filtered Exercises:', filtered);
         return filtered;
       }
-      return this.exercises;
+      return this.exercises.filter(exercise => exercise.rutineId === 1);
+    },
+    selectedRutine() {
+      if (this.rutineId !== null) {
+        return this.rutineOptions.find(option => option.id === this.rutineId);
+      }
+      return this.rutineOptions.find(option => option.id === 1);
     }
   }
 }
@@ -77,7 +83,9 @@ export default {
       </pv-button>
     </div>
   </div>
-  <h2 v-if="rutineId !== null">Rutina: {{ rutineOptions.find(option => option.id === rutineId).name }}</h2>
+  <h2 class="subtittleRutine" v-if="selectedRutine">
+    Día {{ rutineOptions.indexOf(selectedRutine) + 1 }}: {{ selectedRutine.name }}
+  </h2>
   <div class="product-card-list">
     <exercise-card
         v-for="exercise in filteredExercises"
@@ -88,22 +96,37 @@ export default {
 </template>
 
 <style scoped>
+.subtittleRutine{
+  font-family: "Nunito", sans-serif;
+  align-items: center;
+  color: #a6b644;
+  margin-left: 43%;
+  font-size: 29px;
+  width: auto;
+}
 .buttons{
   font-family: "Nunito", sans-serif;
-  background-color: #a6b644;
-  border-color: black;
-  color: white;
+  background-color: #ffffff;
+  border: 1px solid black; /* Define el grosor y color del borde */
+  color: black;
   font-size: 16px;
-  width: auto;
-  height: 100%;
+  height: auto;
   margin-left: 5%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  border-radius: 2em;
+  width: 6em;
+}
+.buttons:hover{
+  background-color: #d1d1d1;
+  transform: scale(1.1);
 }
 .button-container{
   font-family: "Nunito", sans-serif;
   display: flex;
   justify-content: center;
   margin-bottom: 1%;
-  width: 100%;
+  width: auto;
 }
 .titulo-settings {
   font-family: "Nunito", sans-serif;
@@ -115,37 +138,16 @@ export default {
   width: 90%;
 }
 .product-card-list {
-  margin-top: 3em;
+  margin-bottom: 3em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.dropdown-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1em;
-}
-.dropdown-content {
-  width: 300px;
-  border-color: #c5d951;
-}
 .filters{
+
   display: flex;
   justify-content: center;
   margin-bottom: 1em;
-}
-.no-filter-button {
-  margin-left: 1em;
-  padding: 0.5em 1em;
-  background-color: #c5d951;
-  color: #f2f2f2;
-  border: 1px solid #ccc;
-  border-radius: 1em;
-  cursor: pointer;
-}
-.no-filter-button:hover {
-  background-color: #95a53a;
-  color: #f2f2f2;
-
+  align-items: center;
 }
 </style>

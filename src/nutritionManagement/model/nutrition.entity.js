@@ -1,10 +1,12 @@
-export class Nutrition {
-    constructor(id= '', title= '', ingredientes= '', image= '', descripcion='', link='') {
+export class NutritionEntity {
+    constructor(id= '', name= '',
+                description= '',
+                photoUrl= '',
+                classificationId= 0) {
         this.id = id;
-        this.title = title;
-        this.ingredientes = ingredientes;
-        this.image = image;
-        this.descripcion = descripcion;
-        this.link = link;
+        this.name = name;
+        this.description = description;
+        this.photoUrl = photoUrl;
+        this.classificationId = classificationId;
     }
 }

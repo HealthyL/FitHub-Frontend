@@ -1,35 +1,35 @@
 <script>
-
-import {Nutrition} from "@/nutritionManagement/model/nutrition.entity.js";
+import { NutritionEntity } from "@/nutritionManagement/model/nutrition.entity.js";
 
 export default {
-  name: "breakfast-section",
+  name: "nutrition-card",
   props: {
-    nutrition: Nutrition,
+    nutrition: NutritionEntity
   },
   methods: {
     editNutrition() {
-      this.$emit('edit-nutrition', this.nutrition);
+      this.$emit('update', this.nutrition);
     },
     deleteNutrition() {
-      this.$emit('delete-nutrition', this.nutrition.id);
+      this.$emit('delete', this.nutrition.id);
     }
   }
 }
 </script>
+
 <template>
   <pv-card class="custom-card" style="width: 50rem; height: 17rem; overflow: hidden">
     <template #content>
       <div class="card-content">
         <div class="image-container">
-          <img :alt="nutrition.title" :src="nutrition.image" class="card-image"/>
+          <img :alt="nutrition.name" :src="nutrition.photoUrl" class="card-image" />
         </div>
         <div class="card-details">
-          <h2 class="card-title">{{ nutrition.title }}</h2>
-          <p> Ingredientes: {{ nutrition.ingredientes }}</p>
+          <h2 class="card-title">{{ nutrition.name }}</h2>
+          <p> Ingredientes: {{ nutrition.description }}</p>
           <div class="card-button">
-            <pv-button label="EDITAR" class="button-editar" @click="editNutrition"/>
-            <pv-button label="ELIMINAR" class="button-eliminar" @click="deleteNutrition"/>
+            <pv-button label="Editar" class="button-editar" @click="editNutrition" />
+            <pv-button label="Eliminar" class="button-eliminar" @click="deleteNutrition" />
           </div>
         </div>
       </div>
@@ -37,14 +37,12 @@ export default {
   </pv-card>
 </template>
 
-
 <style scoped>
-
 .button-editar {
   margin-right: 5%;
   background-color: #C5D951FF;
   margin-top:1.5em;
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   border: none;
   border-radius: 2em;
@@ -70,8 +68,8 @@ export default {
   transform: scale(1.1);
 }
 .custom-card {
-  margin-top: 3rem;
   margin-right: 2%;
+  margin-bottom: 1%;
 }
 
 .card-content {
