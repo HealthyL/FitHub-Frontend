@@ -37,9 +37,9 @@ export default {
             </router-link>
           </a>
           <a @click="closeCallback">
-            <router-link :to="{ path: '/rutine' }" >
+            <router-link :to="{ path: '/exercises' }" >
               <i class="pi pi-calendar"></i>
-              <span class="font-medium" >{{ $t('toolbar.rutine') }} </span>
+              <span class="font-medium" >{{ $t('toolbar.exercises') }} </span>
             </router-link>
           </a>
           <a @click="closeCallback">
@@ -72,7 +72,7 @@ export default {
           </router-link>
         </a>
         <a>
-          <router-link :to="{ path: '/rutine' }" >
+          <router-link :to="{ path: '/exercises' }" >
             <i class="pi pi-calendar"></i>
             <span class="font-medium">{{ $t('toolbar.rutine') }} </span>
           </router-link>

@@ -1,8 +1,6 @@
 export class RutineEntity {
-    constructor(id, dia, title, image) {
+    constructor(id, name) {
         this.id = id;
-        this.dia = dia;
-        this.title = title;
-        this.image = image;
+        this.name = name;
     }
 }

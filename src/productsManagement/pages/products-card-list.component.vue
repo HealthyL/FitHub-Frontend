@@ -25,7 +25,9 @@ export default {
     async fetchCategoryOptions() {
       try {
         const response = await this.productsService.getCategory();
-        this.categoryOptions = response.data.map(categoryData => new CategoryEntity(categoryData.id, categoryData.name));
+        this.categoryOptions = response.data.map
+        (categoryData => new CategoryEntity(
+            categoryData.id, categoryData.name));
       } catch (error) {
         console.error('Error fetching category data:', error);  // Error handling
       }
@@ -34,8 +36,12 @@ export default {
     async fetchProducts() {
       try {
         const response = await this.productsService.getProducts();
-        this.products = response.data.map(productData => new ProductEntity(productData.id, productData.name, productData.description, productData.price,productData.photoUrl, productData.categoryId));
+        this.products = response.data.map(productData =>
+            new ProductEntity(productData.id, productData.name,
+                productData.description, productData.price,
+                productData.photoUrl, productData.categoryId));
       } catch (error) {
+
       }
     },
     resetFilter() {
@@ -45,7 +51,9 @@ export default {
   computed: {
     filteredProducts() {
       if (this.categoryId !== null) {
-        const filtered = this.products.filter(product => product.categoryId === Number(this.categoryId));
+        const filtered =
+            this.products.filter(product =>
+            product.categoryId === this.categoryId);
         console.log('Filtered Products:', filtered);
         return filtered;
       }
@@ -69,7 +77,9 @@ export default {
       />
     </div>
     <div class="no-filter">
-      <pv-button @click="resetFilter" class="no-filter-button" :disabled="categoryId === null">
+      <pv-button @click="resetFilter"
+                 class="no-filter-button"
+                 :disabled="categoryId === null">
         {{ $t('product.no-filter') }}
       </pv-button>
     </div>

@@ -116,15 +116,15 @@
   ],
   "category": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Nutrition"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Cardio"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Functional"
     }
   ],
@@ -248,180 +248,194 @@
       "image": "https://github.com/HealthyL/images/assets/131493394/27f4a60e-88b9-4298-a761-7051d46d298e"
     }
   ],
-  "rutinas": [
+  "exercises": [
+    {
+      "id": "1",
+      "name": "Sentadillas",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "15",
+      "weight": "5kg",
+      "rutineId": 1
+    },
+    {
+      "id": "2",
+      "name": "Peso muerto",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "12",
+      "weight": "10kg",
+      "rutineId": 1
+    },
+    {
+      "id": "3",
+      "name": "Puente de glúteo",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "20",
+      "weight": "0kg",
+      "rutineId": 1
+    },
+    {
+      "id": "4",
+      "name": "Press de banca",
+      "photoUrl": "",
+      "sets": "4",
+      "reps": "10",
+      "weight": "20kg",
+      "rutineId": 2
+    },
+    {
+      "id": "5",
+      "name": "Aperturas con mancuernas",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "12",
+      "weight": "10kg",
+      "rutineId": 2
+    },
+    {
+      "id": "6",
+      "name": "Fondos en paralelas",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "15",
+      "weight": "0kg",
+      "rutineId": 2
+    },
+    {
+      "id": "7",
+      "name": "Remo con barra",
+      "photoUrl": "",
+      "sets": "4",
+      "reps": "10",
+      "weight": "20kg",
+      "rutineId": 3
+    },
+    {
+      "id": "8",
+      "name": "Dominadas",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "8",
+      "weight": "0kg",
+      "rutineId": 3
+    },
+    {
+      "id": "9",
+      "name": "Face pulls",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "15",
+      "weight": "5kg",
+      "rutineId": 3
+    },
+    {
+      "id": "10",
+      "name": "Curl con barra",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "12",
+      "weight": "10kg",
+      "rutineId": 4
+    },
+    {
+      "id": "11",
+      "name": "Curl martillo",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "12",
+      "weight": "10kg",
+      "rutineId": 4
+    },
+    {
+      "id": "12",
+      "name": "Curl concentrado",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "15",
+      "weight": "5kg",
+      "rutineId": 4
+    },
+    {
+      "id": "13",
+      "name": "Extensiones de tríceps con cuerda",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "12",
+      "weight": "10kg",
+      "rutineId": 5
+    },
+    {
+      "id": "14",
+      "name": "Press francés",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "12",
+      "weight": "15kg",
+      "rutineId": 5
+    },
+    {
+      "id": "15",
+      "name": "Fondos entre bancos",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "15",
+      "weight": "0kg",
+      "rutineId": 5
+    },
+    {
+      "id": "16",
+      "name": "Press militar",
+      "photoUrl": "",
+      "sets": "4",
+      "reps": "10",
+      "weight": "20kg",
+      "rutineId": 6
+    },
+    {
+      "id": "17",
+      "name": "Elevaciones laterales",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "12",
+      "weight": "5kg",
+      "rutineId": 6
+    },
+    {
+      "id": "18",
+      "name": "Pájaros",
+      "photoUrl": "",
+      "sets": "3",
+      "reps": "15",
+      "weight": "5kg",
+      "rutineId": 6
+    }
+  ],
+  "rutine": [
     {
       "id": 1,
-      "dia": "Day 1",
-      "title": "Femorals and Glutes",
-      "image": "https://previews.123rf.com/images/lioputra/lioputra2106/lioputra210600001/169820415-mujer-haciendo-ejercicio-de-peso-muerto-con-pesas-rusas-ilustraci%C3%B3n-de-vector-plano-aislado-sobre.jpg",
-      "photo1": "",
-      "photo2": "",
-      "photo3": "",
-      "photo4": "",
-      "photo5": "",
-      "photo6": "",
-      "activity1": "Squats",
-      "activity2": "Lunges",
-      "activity3": "Deadlifts",
-      "activity4": "Leg Press",
-      "activity5": "Hip Thrusts",
-      "activity6": "Calf Raises",
-      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
-      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
-      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
-      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
-      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
-      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
-      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
-      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
-      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
-      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
-      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
-      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+      "name": "Femorales y gluteos"
     },
     {
       "id": 2,
-      "dia": "Day 2",
-      "title": "Back and Biceps",
-      "image": "https://static.vecteezy.com/system/resources/previews/016/138/007/original/man-doing-lat-pulldown-pull-ups-exercise-flat-illustration-isolated-on-white-background-vector.jpg",
-      "photo1": "",
-      "photo2": "",
-      "photo3": "",
-      "photo4": "",
-      "photo5": "",
-      "photo6": "",
-      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
-      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
-      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
-      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
-      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
-      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
-      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
-      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
-      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
-      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
-      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
-      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+      "name": "Pectorales"
     },
     {
       "id": 3,
-      "dia": "Day 3",
-      "title": "Quadriceps and Calves",
-      "image": "https://static.vecteezy.com/system/resources/previews/008/631/414/original/woman-doing-exercise-using-adduction-inner-thigh-machine-adductor-abductor-flat-illustration-isolated-on-white-background-vector.jpg",
-      "photo1": "",
-      "photo2": "",
-      "photo3": "",
-      "photo4": "",
-      "photo5": "",
-      "photo6": "",
-      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
-      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
-      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
-      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
-      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
-      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
-      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
-      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
-      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
-      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
-      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
-      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+      "name": "Espalda"
     },
     {
       "id": 4,
-      "dia": "Day 4",
-      "title": "Legs and Abdomen",
-      "image": "https://static.vecteezy.com/system/resources/previews/008/384/841/original/man-doing-leg-extension-on-machine-exercise-flat-illustration-isolated-on-white-background-free-vector.jpg",
-      "photo1": "",
-      "photo2": "",
-      "photo3": "",
-      "photo4": "",
-      "photo5": "",
-      "photo6": "",
-      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
-      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
-      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
-      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
-      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
-      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
-      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
-      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
-      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
-      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
-      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
-      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+      "name": "Biceps"
     },
     {
       "id": 5,
-      "dia": "Day 5",
-      "title": "Men and Trapeze",
-      "image": "https://static.vecteezy.com/system/resources/previews/008/384/838/non_2x/man-doing-triceps-presdown-exercise-flat-illustration-isolated-on-white-background-free-vector.jpg",
-      "photo1": "",
-      "photo2": "",
-      "photo3": "",
-      "photo4": "",
-      "photo5": "",
-      "photo6": "",
-      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
-      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
-      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
-      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
-      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
-      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
-      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
-      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
-      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
-      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
-      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
-      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+      "name": "Triceps"
     },
     {
       "id": 6,
-      "dia": "Day 6",
-      "title": "Cardio and Core",
-      "image": "https://i.pinimg.com/736x/d2/03/8c/d2038c8478f88ec91dc5ae17647e6b59.jpg",
-      "photo1": "",
-      "photo2": "",
-      "photo3": "",
-      "photo4": "",
-      "photo5": "",
-      "photo6": "",
-      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
-      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
-      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
-      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
-      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
-      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
-      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
-      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
-      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
-      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
-      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
-      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
-    },
-    {
-      "id": 7,
-      "dia": "day 7",
-      "title": "Rest",
-      "image": "https://previews.123rf.com/images/leonhartrizal/leonhartrizal1412/leonhartrizal141200007/34916614-hombre-tomar-un-descanso-despu%C3%A9s-del-ejercicio.jpg",
-      "photo1": "",
-      "photo2": "",
-      "photo3": "",
-      "photo4": "",
-      "photo5": "",
-      "photo6": "",
-      "description1": "This routine is focused on working the femorals and glutes, with exercises such as squats, lunges, and deadlifts.",
-      "description2": "It is recommended to perform 4 sets of 12 repetitions for each exercise, with a 1-minute rest between sets.",
-      "description3": "Remember to stretch before and after the routine to avoid injuries and improve flexibility.",
-      "description4": "Don't forget to hydrate during the routine and maintain a balanced diet to achieve better results.",
-      "description5": "If you have any questions or concerns, consult a fitness professional or personal trainer.",
-      "description6": "Enjoy the routine and feel the benefits of a healthy and active lifestyle!",
-      "steps1": "1. Squats: Stand with your feet shoulder-width apart, lower your body as if you were sitting in a chair, and return to the starting position. Repeat 12 times.",
-      "steps2": "2. Lunges: Step forward with one leg, lower your body until both knees are at a 90-degree angle, and return to the starting position. Repeat 12 times on each leg.",
-      "steps3": "3. Deadlifts: Stand with your feet shoulder-width apart, bend at the waist, and lower the weights to the ground. Return to the starting position. Repeat 12 times.",
-      "steps4": "4. Leg Press: Sit on the leg press machine, push the platform away from you, and return to the starting position. Repeat 12 times.",
-      "steps5": "5. Hip Thrusts: Lie on your back with your feet flat on the ground, lift your hips towards the ceiling, and return to the starting position. Repeat 12 times.",
-      "steps6": "6. Calf Raises: Stand with your feet shoulder-width apart, lift your heels off the ground, and return to the starting position. Repeat 12 times."
+      "name": "Hombros"
     }
   ],
   "plans": [
