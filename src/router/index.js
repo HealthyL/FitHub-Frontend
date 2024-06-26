@@ -5,9 +5,9 @@ import exercisesCardListComponent from "@/rutineManagement/pages/exercises-card-
 import productsCardListComponent from "@/productsManagement/pages/products-card-list.component.vue";
 import subscriptionManagementComponent from "@/subscription/pages/subscription-management.component.vue";
 import paymentGatewayComponent from "@/subscription/pages/payment-gateway.component.vue";
-import LoginComponent from "@/signAndLogin/pages/login.component.vue";
-import SingupComponent from "@/signAndLogin/pages/singup.component.vue";
 import nutritionsCardListComponent from "@/nutritionManagement/pages/nutritions-card-list.component.vue";
+import SignInComponent from "@/iam/pages/sign-in.component.vue";
+import SignUpComponent from "@/iam/pages/sign-up.component.vue";
 
 
 const router = createRouter({
@@ -19,8 +19,8 @@ const router = createRouter({
         { path: '/products', component: productsCardListComponent, meta: { title: 'Products Card List' }, },
         { path: '/subscription-management', component: subscriptionManagementComponent, meta: { title: 'Subscription Management' } },
         { path: '/payment-gateway', component: paymentGatewayComponent, meta: { title: 'Payment Gateway' } },
-        { path: '/login', component: LoginComponent, meta: { title: 'Log in' } },
-        { path: '/signup', component: SingupComponent, meta: { title: 'Sign Up' } },
+        { path: '/sign-in', name: 'sign-in', component: SignInComponent, meta: { title: 'Sign In' } },
+        { path: '/sign-up', name: 'sign-up', component: SignUpComponent, meta: { title: 'Sign Up' } },
         { path: '/',  redirect: '/my-account' },
         { path: '/:pathMatch(.*)*', component: PageNotFoundComponent},
 

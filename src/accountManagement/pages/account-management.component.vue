@@ -16,7 +16,7 @@ export default {
       accountManagementApiService: null,
       objectiveOptions: [],
       genderOptions: [],
-      name:null,
+      username:null,
       email:null,
       birthdate:null,
       objective:null,
@@ -56,7 +56,7 @@ export default {
         const user = new userEntity(data[0].id, data[0].name, data[0].email, data[0].birthdate, data[0].gender, data[0].objective, data[0].password);
         if (user) {
           this.userId = user.id;
-          this.name = user.name;
+          this.username = user.username;
           this.email = user.email;
           this.birthdate = user.birthdate;
           this.gender = user.gender;
@@ -72,7 +72,7 @@ export default {
     async updateUser() {
       try {
         const userData = {
-          name : this.name,
+          username : this.username,
           email : this.email,
           birthdate : this.birthdate.toISOString().slice(0, 10),
           gender : this.gender,
@@ -90,7 +90,13 @@ export default {
     },
     onCancel() {
       this.showConfirm = false;
-    }
+    },
+    toggleEdit(field) {
+      console.log(`toggleEdit ha sido llamado con el campo: ${field}`);
+      if (field === 'email') {
+        this.editEmail = !this.editEmail;
+      }
+    },
   }
 };
 </script>
@@ -104,11 +110,11 @@ export default {
       <div class="personal-info">
         <div class="field">
           <label for="name">{{ $t('my-account.name') }} </label>
-          <pv-input-text class="p-inputtext" id="name" v-model="name" />
+          <pv-input-text class="p-inputtext" id="username" v-model="username"/>
         </div>
         <div class="field">
           <label for="email">{{ $t('my-account.email') }} </label>
-          <pv-input-text class="p-inputtext" id="email" v-model="email" />
+          <pv-input-text class="p-inputtext" id="email" v-model="email"/>
         </div>
         <div class="field">
           <label for="birthdate">{{ $t('my-account.birthdate') }} </label>
@@ -117,10 +123,6 @@ export default {
         <div class="field">
           <label for="objective">{{ $t('my-account.objective') }} </label>
           <pv-dropdown class="p-dropdown" id="objective" v-model="objective" :options="objectiveOptions" optionLabel="name" :placeholder="objective" />
-        </div>
-        <div class="field">
-          <label for="password">{{ $t('my-account.password') }} </label>
-          <pv-input-text class="p-inputtext" id="password" v-model="password"/>
         </div>
       </div>
       <div class="button-update">

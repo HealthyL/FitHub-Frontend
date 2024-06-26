@@ -1,7 +1,7 @@
 export class userEntity {
-    constructor(id= '', name= '', email='', birthdate='', gender='', objective=null, password='') {
+    constructor(id= '', username= '', email='', birthdate='', gender='', objective=null, password='') {
         this.id = id;
-        this.name = name;
+        this.username = username;
         this.email = email;
         this.birthdate = birthdate;
         this.gender=gender;

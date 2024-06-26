@@ -1,8 +1,9 @@
 <script>
 import LanguageSwitcher from "@/public/pages/language-switcher.component.vue";
+import AuthenticationSection from "@/iam/components/authentication-sector.vue";
 export default {
   name: "app",
-  components: {LanguageSwitcher},
+  components: {AuthenticationSection, LanguageSwitcher},
   title: "FitHub",
   data() {
     return {
@@ -39,7 +40,7 @@ export default {
           <a @click="closeCallback">
             <router-link :to="{ path: '/exercises' }" >
               <i class="pi pi-calendar"></i>
-              <span class="font-medium" >{{ $t('toolbar.exercises') }} </span>
+              <span class="font-medium" >{{ $t('toolbar.rutine') }} </span>
             </router-link>
           </a>
           <a @click="closeCallback">
@@ -54,6 +55,9 @@ export default {
               <span class="font-medium">{{ $t('toolbar.products') }} </span>
             </router-link>
           </a>
+          <div class="center-content">
+            <authentication-section></authentication-section>
+          </div>
         </div>
       </div>
     </template>
@@ -89,16 +93,7 @@ export default {
             <span class="font-medium">{{ $t('toolbar.products') }} </span>
           </router-link>
         </a>
-        <a>
-          <router-link :to="{ path: '/login' }" >
-            <span class="font-medium">{{ $t('toolbar.login') }} </span>
-          </router-link>
-        </a>
-        <a>
-          <router-link :to="{ path: '/signup' }" >
-            <span class="font-medium">{{ $t('toolbar.signup') }} </span>
-          </router-link>
-        </a>
+        <authentication-section></authentication-section>
         <div class="language-switcher-wrapper">
           <language-switcher></language-switcher>
         </div>
@@ -115,8 +110,11 @@ export default {
   .logo-toolbar{
     height:2.5em;
   }
-  span{
-    font-size:large;
+  .center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Asegúrate de que el div ocupe todo el espacio disponible */
   }
   .pi{
     color: #7E8940;
@@ -130,10 +128,13 @@ export default {
     background-color: #c5d951;
   }
   .toolbar-container a{
+    font-size:1em;
     text-decoration: none;
     margin-left:1.5em;
     border-radius:1.5em;
     color: #7E8940;
+    font-family:Nunito, sans-serif;
+    font-weight:800 !important;
   }
   .logo-toolbar{
     width:3em;

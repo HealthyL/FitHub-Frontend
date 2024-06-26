@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import { createPinia } from 'pinia'
 // PrimeVue
 import PrimeVue from 'primevue/config';
 import 'primeflex/primeflex.css';
@@ -39,6 +40,7 @@ createApp(App)
     .use(PrimeVue, { ripple : true })
     .use(i18n)
     .use(router)
+    .use(createPinia())
     .component('pv-input-text', InputText)
     .component('pv-float-label', FloatLabel)
     .component('pv-textarea', Textarea)
