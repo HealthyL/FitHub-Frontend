@@ -5,7 +5,7 @@ export class ExerciseEntity{
                 sets = 0,
                 reps = 0,
                 weight = '',
-                rutineId = 0)
+                routineId = 0)
     {
         this.id = id;
         this.name = name;
@@ -13,6 +13,6 @@ export class ExerciseEntity{
         this.sets = sets;
         this.reps = reps;
         this.weight = weight;
-        this.rutineId = rutineId;
+        this.routineId = routineId;
     }
 }

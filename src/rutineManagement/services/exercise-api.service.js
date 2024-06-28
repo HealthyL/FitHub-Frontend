@@ -5,6 +5,6 @@ export class ExerciseApiService {
         return http.get('/exercises');
     }
     getRutine(){
-        return http.get('/rutines');
+        return http.get('/routines');
     }
 }

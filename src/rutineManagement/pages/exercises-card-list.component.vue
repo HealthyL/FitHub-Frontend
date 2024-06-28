@@ -13,7 +13,7 @@ export default {
     return {
       exercises: [],
       exercisesService: new ExerciseApiService(),
-      rutineId: null,
+      routineId: null,
       rutineOptions: []
     }
   },
@@ -32,37 +32,36 @@ export default {
         console.error('Error fetching rutine data:', error);  // Error handling
       }
     },
-
     async fetchExercises() {
       try {
         const response = await this.exercisesService.getExercises();
+        console.log('Response data:', response.data);  // Debugging step
         this.exercises = response.data.map(exerciseData =>
             new ExerciseEntity(exerciseData.id, exerciseData.name,
                 exerciseData.photoUrl,
                 exerciseData.sets, exerciseData.reps, exerciseData.weight,
-                exerciseData.rutineId));
+                exerciseData.routineId));
+        console.log(this.exercises);
       } catch (error) {
         console.error('Error fetching exercise data:', error);  // Error handling
       }
     },
     resetFilter() {
-      this.rutineId = null;
+      this.routineId = null;
     }
   },
   computed: {
     filteredExercises() {
-      if (this.rutineId !== null) {
-        const filtered =
-            this.exercises.filter(exercise =>
-                exercise.rutineId === this.rutineId);
+      if (this.routineId !== null) {
+        const filtered = this.exercises.filter(exercise => exercise.routineId === this.routineId);
         console.log('Filtered Exercises:', filtered);
         return filtered;
       }
-      return this.exercises.filter(exercise => exercise.rutineId === 1);
+      return this.exercises.filter(exercise => exercise.routineId === 1);
     },
     selectedRutine() {
-      if (this.rutineId !== null) {
-        return this.rutineOptions.find(option => option.id === this.rutineId);
+      if (this.routineId !== null) {
+        return this.rutineOptions.find(option => option.id === this.routineId);
       }
       return this.rutineOptions.find(option => option.id === 1);
     }
@@ -78,7 +77,7 @@ export default {
     <div class="button-container">
       <pv-button class="buttons" v-for="(option, index) in rutineOptions"
                  :key="option.id"
-                 @click="rutineId = option.id">
+                 @click="routineId = option.id">
         Día {{ index + 1 }}
       </pv-button>
     </div>
