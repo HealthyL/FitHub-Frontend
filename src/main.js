@@ -27,7 +27,8 @@ import InputText from "primevue/inputtext";
 import Textarea from "primevue/textarea";
 import Calendar from "primevue/calendar";
 
-
+import ToastService from 'primevue/toastservice';
+import ConfirmationService from "primevue/confirmationservice";
 import '@fortawesome/fontawesome-free/css/all.css'
 
 import i18n from "@/i18n.js";
@@ -41,6 +42,8 @@ createApp(App)
     .use(i18n)
     .use(router)
     .use(createPinia())
+    .use(ConfirmationService)
+    .use(ToastService)
     .component('pv-input-text', InputText)
     .component('pv-float-label', FloatLabel)
     .component('pv-textarea', Textarea)

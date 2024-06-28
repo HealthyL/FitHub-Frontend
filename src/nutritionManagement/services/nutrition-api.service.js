@@ -2,7 +2,7 @@ import http from "@/shared/services/http-common.js";
 
 export class NutritionApiService{
     getNutritions() {
-        return http.get('/nutritions');
+        return http.get('/nutrition');
     }
 
     getClassification() {
@@ -10,14 +10,14 @@ export class NutritionApiService{
     }
     //CRUD
     createNutrition(nutrition) {
-        return http.post('/nutritions', nutrition);
+        return http.post('/nutrition', nutrition);
     }
 
     updateNutrition(nutrition) {
-        return http.put(`/nutritions/${nutrition.id}`, nutrition);
+        return http.put(`/nutrition/${nutrition.id}`, nutrition);
     }
 
     deleteNutrition(id) {
-        return http.delete(`/nutritions/${id}`);
+        return http.delete(`/nutrition/${id}`);
     }
 }

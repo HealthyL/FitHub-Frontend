@@ -8,6 +8,7 @@ import paymentGatewayComponent from "@/subscription/pages/payment-gateway.compon
 import nutritionsCardListComponent from "@/nutritionManagement/pages/nutritions-card-list.component.vue";
 import SignInComponent from "@/iam/pages/sign-in.component.vue";
 import SignUpComponent from "@/iam/pages/sign-up.component.vue";
+import {authenticationGuard} from "@/iam/services/authentication.guard.js";
 
 
 const router = createRouter({
@@ -29,8 +30,9 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
     let baseTitle = 'FitHub';
-    document.title = `${ baseTitle } | ${ to.meta["title"]}`;
-    next();
+    document.title = `${ baseTitle } | ${to.meta["title"]}`;
+    authenticationGuard(to, from, next);
 });
 
 export default router;
+

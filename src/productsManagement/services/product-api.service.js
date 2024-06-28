@@ -5,6 +5,6 @@ export class ProductApiService {
         return http.get('/products');
     }
     getCategory(){
-        return http.get('/category');
+        return http.get('/categories');
     }
 }

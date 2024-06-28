@@ -2,9 +2,8 @@ import http from "../../shared/services/http-common.js";
 
 export class AuthenticationService {
     signIn(signInRequest) {
-        return http.post('/users', signInRequest);
+        return http.post('/authentication/sign-in/', signInRequest);
     }
-
     signUp(signUpRequest) {
         return http.post('/authentication/sign-up/', signUpRequest);
     }
@@ -14,8 +13,4 @@ export class AuthenticationService {
     updateUser(id, data) {
         return http.put(`/users/${id}`, data);
     }
-    getGenders() {
-        return http.get('/genders');
-    }
-
 }

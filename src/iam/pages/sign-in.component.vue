@@ -47,9 +47,9 @@ export default {
             <span  class="route-to-registration">{{ $t('login.go-to-signup') }}</span>
           </router-link>
         </div>
-        <div class="button-container">
-          <pv-button class="btn-register"  type="submit">{{ $t('login.title') }}</pv-button>
-        </div>
+      </div>
+      <div class="button-container">
+        <pv-button class="btn-register"  type="submit">{{ $t('login.title') }}</pv-button>
       </div>
     </form>
   </div>
@@ -115,7 +115,6 @@ export default {
 }
 .btn-register {
   background-color: #C5D951FF;
-  width:25%;
   color: #fff;
   font-size: 18px;
   border: none;

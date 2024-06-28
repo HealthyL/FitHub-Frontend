@@ -10,7 +10,4 @@ export class AccountManagementApiService{
     updateUser(id, data) {
         return http.put(`/users/${id}`, data);
     }
-    getGenders() {
-        return http.get('/gender');
-    }
 }

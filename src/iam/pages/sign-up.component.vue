@@ -1,8 +1,7 @@
 <script>
 import {useAuthenticationStore} from "../services/authentication.store.js";
 import {SignUpRequest} from "../model/sign-up.request.js";
-import {ObjectiveEntity} from "@/shared/model/objective.entity.js";
-import {GenderEntity} from "@/shared/model/gender.entity.js";
+import {ObjectiveEntity} from "@/accountManagement/model/objective.entity.js";
 import {AuthenticationService} from "@/iam/services/authentication.service.js";
 
 export default {
@@ -14,9 +13,7 @@ export default {
       username: "",
       password: "",
       objectiveOptions: [],
-      genderOptions: [],
       objective: null,
-      gender: null,
       email: null,
       birthdate: null,
     };
@@ -24,12 +21,13 @@ export default {
   created() {
     this.authenticationService = new AuthenticationService();
     this.fetchObjectiveOptions();
-    this.fetchGenderOptions();
   },
   methods: {
     onSignUp() {
-      let signUpRequest = new SignUpRequest(this.username, this.password);
+      let signUpRequest = new SignUpRequest(this.username, this.email, this.birthdate, this.objective.name,this.password,);
+      console.log(signUpRequest);
       this.authenticationStore.signUp(signUpRequest, this.$router);
+
     },
     async fetchObjectiveOptions() {
       try {
@@ -38,17 +36,8 @@ export default {
       } catch (error) {
         console.error('Error al obtener los datos', error);
       }
-    },
-    async fetchGenderOptions() {
-      try {
-        const response = await this.authenticationService.getGenders();
-        this.genderOptions = response.data.map(gender => new GenderEntity(gender.id, gender.name));
-      } catch (error) {
-        console.error('Error al obtener los datos', error);
-      }
     }
   }
-
 }
 </script>
 
@@ -82,16 +71,8 @@ export default {
           </div>
           <div>
             <pv-float-label>
-              <label class="label-input" for="gender">{{ $t('signup.gender') }}</label>
+              <label class="label-input" for="objective">{{ $t('signup.objective') }}</label>
               <pv-dropdown class="input" id="objective" v-model="objective" :options="objectiveOptions" optionLabel="name" />
-              <small v-if="!gender" class="p-invalid">{{ $t('signup.gender') }} is required.</small>
-            </pv-float-label>
-          </div>
-          <div>
-            <pv-float-label>
-              <label class="label-input" for="gender">{{ $t('signup.gender') }}</label>
-              <pv-dropdown class="input" id="objective" v-model="objective" :options="objectiveOptions" optionLabel="name" />
-              <small v-if="!gender" class="p-invalid">{{ $t('signup.gender') }} is required.</small>
             </pv-float-label>
           </div>
           <div>
